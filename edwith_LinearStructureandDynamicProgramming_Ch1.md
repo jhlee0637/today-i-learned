@@ -27,7 +27,7 @@
 - Opposite to Object-oriented Programming
 - Procedure-oriented Programming does not use Class
 - Largely in two parts: 1) Definition part 2) Execution part
-```
+```Python
 '''
 This is 'Procedure-oriented' Hello World code.
 Meaning, code has only functions.
@@ -48,7 +48,7 @@ main()
 ## What is Object-oriented Programming
 - Object-oriented Programming use Class
 - Largely in two parts: 1) Definition part 2) Execution part
-```
+```Python
 '''
 This is 'Object-oriented' Hello World.
 Meaning, using class to make an instance later.
@@ -112,17 +112,17 @@ For method,
 - You can return multiple variables
 	- But keep them in order
 - You do not have to specify return types
-```
+```Python
 def name(parameters):
 	statements
 	return variable1 variable2...
 ```
 - One line function is called *lambda* function
-```
+```Python
 lambda <parameters> : <return>
 ```
 
-```
+```Python
 numA = 1
 numB = 2
 
@@ -135,7 +135,7 @@ print(numL)
 # What is different between 'A is B' and 'A == B'?
 - 'A is B' checks their objects' IDs
 - 'A == B' checks their values
-```
+```Python
 k=2
 A=[1, 2, 3]
 B=[1, k, 3]
@@ -148,7 +148,7 @@ B=[1, k, 3]
 - Class is like a blue print
 - Instance is like a house, which is built based on the blue print, the Class
 - One blue print -> Several Houses, but with slightly different features
-```
+```Python
 class MyHome:
 	colorRoof = 'red'
 	stateDoor = 'closed'
@@ -180,7 +180,7 @@ homeAtSeoul.printStatus()
 - Clearly removing the class
 - Rarely used
 Let's add the constructor and destructor on the above code.
-```
+```Python
 from time import ctime   #Let's add time info
 
 class MyHome:
@@ -219,10 +219,10 @@ del homeAtNewyork
 - Several module files can be placed in one directory or folder
 - We call these directories as **Package**
 - Package folder should have *_init_.py* in the directory
-  ```
+  ```Python
   from <directory=package> import module
   ```
 - When the module is placed in the same directory with the file which uses the module, we can skip to write *from*
-  ```
+  ```Python
   import module
   ```
