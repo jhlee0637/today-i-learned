@@ -147,3 +147,124 @@ me.doRunning() #Fast
 print(me.strHomeTown) #Universe
 print(me.strName) #Sun
 ```
+# Polymorphism
+- Method Overriding & Overloading
+- After get method from superclass, subclass can modify the method in two ways: overriding, overloading
+- We can also set the default parameter value
+## Method Overriding
+- Base class has a method A(num),
+  and its derived class has a method A(num)
+## Method Overloading
+- A class has a method A(num),
+  A(num, name),
+  and A(num, name, home)
+## Practice
+```python
+'''
+method overriding: change the behavior of existing methods
+
+method overloading: more than one method of the same class shares the same method name having different signatures
+'''
+class Building:
+    strAddress = "Daejeon"
+    def openDoor(self):
+        print("Door Opened")
+
+class Hotel(Building):
+    def openDoor(self): #overriding of the method 'openDoor' from the super class 'Building'
+        print("Bellboy opens a door")
+    def checkIn(self, days = 1): #overloading by putting default value of the parameter
+        print("Someone checks in for", days, "days")
+
+lotteHotel = Hotel()
+lotteHotel.openDoor()
+lotteHotel.checkIn() #default value of 'days' is 1. So in here, the method 'checkIn' looks like doesn't have any parameter.
+lotteHotel.checkIn(2) #the method 'checkIn' gets parameter but still works with overloading.
+```
+# Abstract class (=Abstract Base Class)
+- A class with an abstract method
+	- The abstract method is a method with signature, but with no implementation
+	- The abstract method is not a complete
+	- You can't make an instance out of it
+- By abstract class, we can design more carefully
+	- The main purpose is inheriting the abstract method to subclass and let that override it
+## Practice
+```python
+'''
+abstract class: A class with an abstract method
+
+abstract method: A method with signature, but with no implementation.
+                 Abstract method is not a complete.
+                 You can't make an instance out of it.
+                 The concrete class with 'full' implementations and inheriting the abstract class will be a basic for instances.
+'''
+from abc import ABC, abstractmethod
+
+class Room(ABC):
+    @abstractmethod #indicator of abstract base method and class
+    def openDoor(self):
+        pass
+    @abstractmethod
+    def openWindow(self):
+        pass
+
+class BedRoom(Room):
+    def openDoor(self):
+        print("Open bedroom door")
+    def openWindow(self):
+        print("Open bedroom winodw")
+
+class Lobby(Room): #this class has a lack of method, 'openWindow' which is the abstract base method of the super calss.
+    def openDoor(self):
+        print("Open lobby door")
+
+room1 = BedRoom()
+print(issubclass(BedRoom, Room), isinstance(room1, Room))
+
+lobby1 = Lobby()
+print(issubclass(Lobby, Room), isinstance(lobby1, Room))
+```
+# *Object* class 
+- The top superclass of all of classes
+	- Or, think it as like default type of class
+- Every Python classes are the descendeants of *Object*
+	- When we code like `class name:` it's actually like `class name(object):`
+- *Object* class has several methods
+	- *init*
+	- *del*
+	- *eq*
+	- *add*
+	  ...
+- We are actually override them to make the methods behave as we please
+## Practice
+```python
+'''
+All of Python classes are the descendants of Object.
+
+Object class has many hidden methods: __init__  constructor
+                                      __del__
+                                      __eq__    T/F examination
+                                      __cmp__   compare
+                                      __add__   
+
+We actually override to those hidden methods.
+'''
+class Room:
+    numWidth = 100
+    numHeight = 100
+    numDepth = 100
+
+    def __init__(self, parWidth, parHeight, parDepth): #actually overriding from the object class
+        self.numDepth = parDepth
+        self.numWidth = parWidth
+        self.numHeight = parHeight
+    
+    def getVolume(self):
+        return self.numDepth*self.numHeight*self.numWidth
+
+    def __eq__(self, other):
+        if isinstance(other, Room):
+            if self.getVolume() == other.getVolume(): #Duck Typing: the variable is not defined yet
+                return True
+        return False
+```
