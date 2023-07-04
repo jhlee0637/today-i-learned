@@ -1,8 +1,9 @@
 # today-i-learned
 
 # 2023
+03/July/2023 Reviewing [Edwith - LinearStructureandDynamicProgramming - Chapter 3](./edwith_LinearStructureandDynamicProgramming_Ch3.md) (ongoing)
 
-02/July/2023 Reviewing [Edwith - LinearStructureandDynamicProgrammng - Chapter 2](./edwith_LinearStructureandDynamicProgramming_Ch2.md) 
+02/July/2023 Reviewing [Edwith - LinearStructureandDynamicProgramming - Chapter 2](./edwith_LinearStructureandDynamicProgramming_Ch2.md) 
 
 01/July/2023 Code modify from Edwith classes
 
