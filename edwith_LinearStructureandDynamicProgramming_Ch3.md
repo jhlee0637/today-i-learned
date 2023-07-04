@@ -197,3 +197,113 @@ list1.printStatus()
 list1.removeAt(3) #delete the node at the middle of the array 
 list1.printStatus()
 ```
+# Stack
+## Structure of *Stack*
+- Stacks are linear like linked lists
+	- A variation of a singly linked list
+- You can only access to **the first instance** in the list
+	- This mechanism is called Last-In-First-Out(LIFO)
+	- You cannot modify other instances in the list
+- Imagine the snack, Pringles
+	- You can only access to the top of the container
+## *Push* operation of *Stack*
+- Insert an instance at the first in the linked list
+- Put an instance at the top in the stack
+## Pop operation of Stack
+- Remove and return an instance at the first in the linked list
+- Remove and return an instance at the top in the stack
+## Practice
+```python
+'''
+Stacks are the name of data structure.
+Stacks are linear like linked lists.
+You can only access to the end of stack.
+You can't insert or delete the data from middle. (Last In First Out)
+
+Stack has two operations.
+1) Push: insert an instance at the first in the linked list.
+2) Pop: remove and return an instance at the first in the linked list.
+'''
+from ImportOnly.SinglyLinkedList import SinglyLinkedList
+
+class Stack(object):
+    lstInstance = SinglyLinkedList()
+
+    def pop(self):
+        return self.lstInstance.removeAt(0) #remove from first
+
+    def push(self, value):
+        self.lstInstance.insertAt(value, 0) #insert to first
+
+stack = Stack()
+stack.push("a")
+stack.push("b")
+stack.push("c")
+
+print(stack.pop()) #c
+print(stack.pop()) #b
+print(stack.pop()) #a
+```
+## Where to use *Stack* structure?
+- For example, check balancing symbols
+	- Balancing symbols: ( ), { }, [ ]
+	- `[2+(1+2)]-3` -> balanced symbols
+	- `{2+(1}+2)-3` -> not balanced symbols
+- It's not about counting symbols
+- It's about opening and closing at right order
+- Algorithm for the balanced symbol checking
+	1) Make an empty stack
+	2) Read symbols until end of formula
+		- If the symbol is an opening symbol, push it onto the stack
+		- If the symbol is a closing symbol
+			- If the stack is empty -> error
+			- If the stack has matched symbol -> pop
+			- If the stack has not-matched symbol -> error
+	3) At the end of the formula, if the stack is not empty -> error
+# Queue
+## Structure of Queue
+- Queues are linear like linked lists
+	- A variation of a singly linked list
+- You can only access to **the first and last instance** in the list
+	- This mechanism is called First-In-First-Out(LIFO)
+	- You cannot modify other instances in the list
+- Items are inserted at the last, removed at the front
+## Enqueue operation from Queue
+- Insert an instance at the last in the linked list
+- Put an instance at the rear in the queue
+## Dequeue operation from Queue
+- Remove and return an instance at the first in the linked list
+- Remove and return an instance at the front in the queue
+## Practice
+```python
+'''
+Queues are the name of data structure.
+Queues are linear like linked lists.
+You can insert to the first of queue.
+You can remove from the end of queue.
+You can't insert or delete the data from middle. (First In First Out)
+
+Queue has two operations.
+1) Enqueue: insert an instance at the last in the linked list.
+2) Dequeue: remove and return an instance at the first in the linked list.
+'''
+from ImportOnly.SinglyLinkedList import SinglyLinkedList
+
+class Queue(object):
+    lstInstance = SinglyLinkedList()
+
+    def dequeue(self):
+        return self.lstInstance.removeAt(0) #remove from first
+
+    def enqueue(self, value):
+        self.lstInstance.insertAt(value, self.lstInstance.getSize()) #insert to end
+
+queue = Queue()
+queue.enqueue("a")
+queue.enqueue("b")
+queue.enqueue("c")
+
+print (queue.dequeue()) #a
+print (queue.dequeue()) #b
+print (queue.dequeue()) #c
+```
