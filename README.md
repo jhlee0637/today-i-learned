@@ -1,5 +1,7 @@
 # 2023
 ## July
+06/July/2023 [p-value(유의확률)](./p-value(%EC%9C%A0%EC%9D%98%ED%99%95%EB%A5%A0).md)
+
 05/July/2023 [p-value(유의확률)](./p-value(%EC%9C%A0%EC%9D%98%ED%99%95%EB%A5%A0).md) (ongoing)
 
 04/July/2023 Reviewing [Edwith - LinearStructureandDynamicProgramming - Chapter 3](./edwith_LinearStructureandDynamicProgramming_Ch3.md) 
