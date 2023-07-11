@@ -1,5 +1,8 @@
 # 2023
 ## July
+10/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 5](edwith_LSnDP_Ch5.md)
+             [Edwith - LinearStructureandDynamicProgramming - Chapter 6](edwith_LSnDP_Ch6.md)
+
 08/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 4](edwith_LSnDP_Ch4.md)
 
 07/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 4](edwith_LSnDP_Ch4.md) (ongoing)

@@ -135,7 +135,7 @@ We can do insertion or deletion of nodes from singly link list.
 2) Delete procedure: retrieve the next node
                      update the previous node to point the next node
 '''
-from ImportOnly.NodeClass import Node 
+from ImportOnly.NodeClass import Node #please check https://github.com/jhlee0637/CodeExercising 
 
 class SinglyLinkedList:
     nodeHead = ''
@@ -225,7 +225,7 @@ Stack has two operations.
 1) Push: insert an instance at the first in the linked list.
 2) Pop: remove and return an instance at the first in the linked list.
 '''
-from ImportOnly.SinglyLinkedList import SinglyLinkedList
+from ImportOnly.SinglyLinkedList import SinglyLinkedList #please check https://github.com/jhlee0637/CodeExercising
 
 class Stack(object):
     lstInstance = SinglyLinkedList()
@@ -288,7 +288,7 @@ Queue has two operations.
 1) Enqueue: insert an instance at the last in the linked list.
 2) Dequeue: remove and return an instance at the first in the linked list.
 '''
-from ImportOnly.SinglyLinkedList import SinglyLinkedList
+from ImportOnly.SinglyLinkedList import SinglyLinkedList #please check https://github.com/jhlee0637/CodeExercising
 
 class Queue(object):
     lstInstance = SinglyLinkedList()

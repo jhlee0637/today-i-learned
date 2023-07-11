@@ -1,4 +1,5 @@
-[EDWITH: Linear Structure and Dynamic Programming](www.edwith.org/datastructure-2019s) Chapter 4
+[EDWITH: Linear Structure and Dynamic Programming](www.edwith.org/datastructure-2019s)   
+Chapter 4: Recursions and Dynamic Programming
 # Recursion
 ## Repeating Problem from Programming
 1) You use a method to solve problem, get a value
@@ -172,7 +173,7 @@ compare with the recursion's Fibonacci solution in big-O,
 '''
 ```
 # Solving Assembly Line Sceduling problem in Recursion and DynamicProgramming
-[Geeks for Geeks: Assembly Line Scheduling](https://www.geeksforgeeks.org/assembly-line-scheduling-dp-34/)
+[To understand concept -> Geeks for Geeks: Assembly Line Scheduling](https://www.geeksforgeeks.org/assembly-line-scheduling-dp-34/)
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/AssembleScheduling1.png">
 ## 1. Using Recursion
 ```python
