@@ -22,25 +22,34 @@ Chapter 6: Tree
 	- Command and control structures
 - *Tree* structure is easy to *Divide* and *Conquer* the data
 ## Compare with *Linked List* and *Tree*
-- Linked List is linear structure, each node has one single 'next' variable
+- Linked List is linear structure, one Linked List node has single 'next' variable
 	■ ─ ■ ─ ■ ─ ■
-- One Tree's node could have multiple 'next' variables
-	■  ┬ ■
-	  ├ ■
-	  ├ ■
-	  └ ■
+- One Tree node can have multiple 'next' variables   
+	■  ┬ ■   
+	  ├ ■ ┬ ■   
+	  │     └ ■   
+	  ├ ■    
+	  └ ■ ┬ ■   
+		  └ ■   
 - Particularly, the structure maintains the next nodes as an array or variables
-## Some terms of *Tree* structure
+# Some terms of *Tree* structure
 - Root: the toppest node
 - Edge: the line from a node to the next node
 - Parent-Child: When two nodes are linked through the edge, they are in Parent-Child relationship
 - Siblings: a group of Child nodes
 - Leave nodes/Terminal nodes: the nodes at bottom
 - Internal nodes: nodes between Leave and Root
-- Path to 'x': the shortest way from Root to the node 'x'
+## *Ancestors, Descendants, Path*
 - Ancestors of 'x': Every ancestor nodes of the node 'x'
 - Descendants of 'x': Every descendants nodes of the node 'x'
-- Size of tree: the number of all nodes
+- Path to 'x': the shortest way from Root to the node 'x'
+## *Depth, Size, Height, Degree*
 - Depth and level of 'x': same as 'Path'
+- Size of tree: same as many as nodes
 - Height: the maximum depth of the Tree structure
 - Degree of 'x': the maximum nodes which the node 'x' could acquire
+## *Full Tree* and *Complete Tree*
+-  Ful Tree: utilize every next nodes. 
+	- Tree height = Tree depth
+- Complete Tree: the next nodes are not fully utilized yet
+	- The nodes are filled from the left side of the graphic of the structure

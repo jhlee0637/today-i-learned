@@ -1,7 +1,11 @@
 # 2023
 ## July
+12/JUly/2023 [Building Docer & Google Cloud](./Building%20Docker%20in%20Google%20Cloud.md) (ongoing)
+
+11/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 6](edwith_LSnDP_Ch6.md) (ongoing)
+
 10/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 5](edwith_LSnDP_Ch5.md)
-             [Edwith - LinearStructureandDynamicProgramming - Chapter 6](edwith_LSnDP_Ch6.md)
+             [Edwith - LinearStructureandDynamicProgramming - Chapter 6](edwith_LSnDP_Ch6.md) (ongoing)
 
 08/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 4](edwith_LSnDP_Ch4.md)
 
