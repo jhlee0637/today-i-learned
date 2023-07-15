@@ -1,6 +1,7 @@
 # 2023
 ## July
-15/July/2023  [Edwith - LinearStructureandDynamicProgramming - Chapter 6](edwith_LSnDP_Ch6.md)
+15/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 6](edwith_LSnDP_Ch6.md)
+             [Why Bioinformaticians use Nextflow thesedays?](./Why%20Bioinformaticiansuse%20Nextflow%20Thesedays.md)    
 
 14/July/2023 Code modify from Edwith classes
 
