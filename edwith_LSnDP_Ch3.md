@@ -1,4 +1,5 @@
-[EDWITH: Linear Structure and Dynamic Programming](www.edwith.org/datastructure-2019s) Chapter 3
+[EDWITH: Linear Structure and Dynamic Programming](https://www.edwith.org/datastructure-2019s)   
+Chapter 3: Abstract Data Types
 # Abstract Data Types(ADT)
 - An abstraction of a data structure
 - Include...

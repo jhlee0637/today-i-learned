@@ -1,4 +1,4 @@
-[EDWITH: Linear Structure and Dynamic Programming](www.edwith.org/datastructure-2019s)   
+[EDWITH: Linear Structure and Dynamic Programming](https://www.edwith.org/datastructure-2019s)   
 Chapter 6: Tree
 # *Tree* Structure is an abstract data type
 ## *Abstract Data Type*

@@ -1,4 +1,5 @@
-[EDWITH: Linear Structure and Dynamic Programming](www.edwith.org/datastructure-2019s) Chapter 1
+[EDWITH: Linear Structure and Dynamic Programming](https://www.edwith.org/datastructure-2019s)   
+Chapter 1
 # What Makes You As a Good Engineer?
 - Programming is an implementation tool.
 ## Good engineer needs...

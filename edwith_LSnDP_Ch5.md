@@ -1,4 +1,4 @@
-[EDWITH: Linear Structure and Dynamic Programming](www.edwith.org/datastructure-2019s)   
+[EDWITH: Linear Structure and Dynamic Programming](https://www.edwith.org/datastructure-2019s)   
 Chapter 5: The Application of Computer Simulations
 # Real World's Problems
 - Developing a specialized solution -> theorical

@@ -1,4 +1,5 @@
-[EDWITH: Linear Structure and Dynamic Programming](www.edwith.org/datastructure-2019s) Chapter 2
+[EDWITH: Linear Structure and Dynamic Programming](https://www.edwith.org/datastructure-2019s)   
+Chapter 2: Object Oriented Paradigm
 # Object-oriented paradigm(OOP)
 ## What is *object* from programming
 - Class, Instance, inheritance, encapsulation, polymorphism ...
