@@ -57,15 +57,15 @@
 - Snakemake is Python-like
 - Snakemake needs user to pre-understand of Python
 - Snakemake may need to install other tools first(conda, mambaforge)
-- Snakemake is integrated with other bioinformatics tools such as BioConda, Maba
+- Snakemake is integrated with other bioinformatics tools such as BioConda, Maba   
 
 - Nextflow is UNIX-like
 - Nextflow is easy to install, easy to learn
 - Nextflow is well documentized 
-- Nextflow has an active community
+- Nextflow has an active community   
 
 - Both systems enable the automatic parallelization of jobs and automatic retrying of failed jobs.
-- Both workflow management systems support cloud execution via Kubernetes.
+- Both workflow management systems support cloud execution via Kubernetes.   
 
 - Snakemake is faster than Nextflow(Dec 2022)
 - Snakemake supports dry-run execution testing
