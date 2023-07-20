@@ -1,5 +1,7 @@
 # 2023
 ## July
+19/July/2023 [Prime number and Sieve of Eratosthenes](./Prime%20number%20and%20Sieve%20of%20Eratosthenes.md)
+
 18/July/2023 [Greatest Common Divisor, Least Common Multiple, and Euclidean algorithm](./Greatest%20Common%20Divisor,%20Least%20Common%20Multiple,%20and%20Euclidean%20algorithm.md)
 
 17/July/2023 [Building Docer & Google Cloud](./Building%20Docker%20in%20Google%20Cloud.md) (ongoing)
