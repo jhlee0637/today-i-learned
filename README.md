@@ -1,5 +1,7 @@
 # 2023
 ## July
+21/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 7](./edwith_LSnDP_Ch7.md) (ongoing)
+
 19/July/2023 [Prime number and Sieve of Eratosthenes](./Prime%20number%20and%20Sieve%20of%20Eratosthenes.md)
 
 18/July/2023 [Greatest Common Divisor, Least Common Multiple, and Euclidean algorithm](./Greatest%20Common%20Divisor,%20Least%20Common%20Multiple,%20and%20Euclidean%20algorithm.md)
@@ -7,7 +9,7 @@
 17/July/2023 [Building Docer & Google Cloud](./Building%20Docker%20in%20Google%20Cloud.md) (ongoing)
 
 15/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 6](edwith_LSnDP_Ch6.md)   
-                     [Why Bioinformaticians use Nextflow thesedays?](./Why%20Bioinformaticiansuse%20Nextflow%20Thesedays.md)    
+[Why Bioinformaticians use Nextflow thesedays?](./Why%20Bioinformaticiansuse%20Nextflow%20Thesedays.md)    
 
 14/July/2023 Code modify from Edwith classes
 
@@ -16,7 +18,7 @@
 11/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 6](edwith_LSnDP_Ch6.md) (ongoing)
 
 10/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 5](edwith_LSnDP_Ch5.md)     
-                     [Edwith - LinearStructureandDynamicProgramming - Chapter 6](edwith_LSnDP_Ch6.md) (ongoing)
+[Edwith - LinearStructureandDynamicProgramming - Chapter 6](edwith_LSnDP_Ch6.md) (ongoing)
 
 08/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 4](edwith_LSnDP_Ch4.md)
 
