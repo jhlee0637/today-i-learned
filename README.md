@@ -1,5 +1,7 @@
 # 2023
 ## July
+30/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 7](./edwith_LSnDP_Ch7.md)
+
 21/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 7](./edwith_LSnDP_Ch7.md) (ongoing)
 
 19/July/2023 [Prime number and Sieve of Eratosthenes](./Prime%20number%20and%20Sieve%20of%20Eratosthenes.md)
