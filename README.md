@@ -1,5 +1,7 @@
 # 2023
 ## July
+31/July/2023 [Build Bioinformatics Workflow from scratch](./Build%20Bioinformatics%20Workflow%20from%20scratch.md) (ongoing)
+
 30/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 7](./edwith_LSnDP_Ch7.md)
 
 21/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 7](./edwith_LSnDP_Ch7.md) (ongoing)
