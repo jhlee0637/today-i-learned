@@ -1,5 +1,7 @@
 # 2023
 ## August
+02/August/2023 [Build Bioinformatics Workflow from scratch](./Build%20Bioinformatics%20Workflow%20from%20scratch.md) (ongoing)
+
 01/August/2023 [Build Bioinformatics Workflow from scratch](./Build%20Bioinformatics%20Workflow%20from%20scratch.md) (ongoing)
 
 ## July
