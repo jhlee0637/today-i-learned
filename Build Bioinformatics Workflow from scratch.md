@@ -3,8 +3,8 @@
 	- Docker를 활용하여 windows11 환경에서 구축
 2. 서버를 다루기 편하도록 docker와 Visual Studio Code와 연결시킴
 	- VSCode의 docker 확장프로그램을 통하여 연결
-	- Docker window의 bash 혹은 VSCode에서 bash 붙여넣기로 접속하면 관리자 계정으로 접속하는게 아님. 그렇게 접속하면 cluster system에 접속할 때 처럼 bash가 뜬다. (`sh-5.1#`)
-	- VSCode의 open a remote window를 통해서 열면 서버 디렉토리도 확인할 수 있고, 서버 내 bash도 올바르게 연결해준다.
+	- Docker window의 bash 혹은 VSCode에서 attach to bash로 접속하면 cluster system에 접속할 때 처럼 bash가 뜬다. (`sh-5.1#`)
+	- VSCode에서 attach to VScode를 통하여, 새 창을 열어서 접속한다.
 # 1. 자주 사용하는 기본적인 패키지, 라이브러리 설치
 ## 기본상식: yum? dnf? apt? sudo?
 - `yum`과 `apt`는 모두 패키지 설치 관리자다. 다만 같은 리눅스 계열이라 할지라도 어느 리눅스 시스템을 쓰느냐에 따라 다른 패키지 설치 관리자를 사용하게 된다.
@@ -17,29 +17,22 @@
 # 기본적으로 다운받은 패키지들
 모든 명령어는 일반사용자가 아닌 root 사용자로 로그인한 상태에서 진행하였다.
 
-**which**
-`yum install which`
+**which**  `yum install which`
 
-**python**
- `yum install python`
+**python** `yum install python`
 
-**pip**
-`yum install pip`
+**pip** `yum install pip`
 
-wget
-`pip install w****get`
+**wget** `pip install wget`
 
-**sudo**
-`yum install sudo`
+**sudo** `yum install sudo`
 
-**vim**
-`yum install vim`
+**vim** `yum install vim`
 
-**unzip**
-`yum install unzip`
+**unzip** `yum install unzip`
 
 # 2. 막무가내로 GATK부터 설치
-## GATK를 다운받자자
+## GATK를 다운받자
 - Anaconda로 받거나, 공식 github에서 clone으로 받거나, docker image로 받거나 여러 방법이 있다.
 	- [Getting started with GATK4](https://gatk.broadinstitute.org/hc/en-us/articles/360036194592-Getting-started-with-GATK4)
 - 그러나 해당 방법들은 다시 추가적인 환경 구축을 요구한다 -> 귀찮다
@@ -61,10 +54,10 @@ wget
 	- `wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm`
 	- `yum -y install ./jdk-17_linux-x64_bin.rpm`
 	- 버전확인도 수행하자
-```shell
+	```shell
 	# java --version
 	java 17.0.8 2023-07-18 LTS
-```
+	```
 1.  Python
 	- 이미 설치했다
 2.  R
@@ -79,16 +72,16 @@ wget
 	- 만약 이 과정이 귀찮다면, gatk를 bash enviroment에 추가하는 방법도 있다. 다만 개인적으로 필수적이거나 설치 과정 중에서 자연스럽게 추가되지 않는 경우에는 지양하는 편이다.
 - 나의 경우 `/download/gatk-4.4.0.0` 디렉토리에 gatk가 들어있었다.
 - `--list` 를 통하여 GATK를 돌려본다.
-```shell
-# /download/gatk-4.4.0.0/gatk --list
-Using GATK jar /download/gatk-4.4.0.0/gatk-package-4.4.0.0-local.jar
-Running:
-    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /download/gatk-4.4.0.0/gatk-package-4.4.0.0-local.jar --help
-USAGE:  <program name> [-h]
-
-Available Programs:
-...
-```
+	```shell
+	# /download/gatk-4.4.0.0/gatk --list
+	Using GATK jar /download/gatk-4.4.0.0/gatk-package-4.4.0.0-local.jar
+	Running:
+	    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /download/gatk-4.4.0.0/gatk-package-4.4.0.0-local.jar --help
+	USAGE:  <program name> [-h]
+	
+	Available Programs:
+	...
+	```
 - 이렇게 프로그램 목록이 쫙 뜨면 성공이다.
 # 3. SAMtools 설치
 - SAMtools는 BAM/SAM/CRAM 파일을 다루는데 특화되어있다.
@@ -116,7 +109,7 @@ Download the source code here: [samtools-1.18.tar.bz2](https://github.com/samtoo
 - SAMtools는 GATK와 달리 압축을 풀었어도 바로 사용할 수 없다.
 - 압축이 풀린 SAMtools 폴더에 들어가면 굉장히 파일이 많다는 사실을 알 수 있다.
 - github에서 clone하는 방식으로 다운로드 받은 경우 `autoheader` 라던가 `autoconf` 라던가 추가적인 패키지가 필요된다. 다행히 단순하게 다운받았기 때문에 이러한 과정은 생략한다.
-- 곧바로 SAMtools 설치환경 구성을 시도한다.
+- 곧바로 SAMtools 폴더 내에서 설치환경 구성을 시도한다.
 	- `./configure`
 	- 그러면 다음과 같은 에러 메시지를 만나게 된다.
 	```shell
@@ -150,7 +143,7 @@ Download the source code here: [samtools-1.18.tar.bz2](https://github.com/samtoo
 - 이제 진짜로 설치를 한다.
 	- `make install`
 - SAMtools의 경우 설치가 끝나면 env에 자동으로 명령어가 등록된다. 설치가 잘 되었는지 확인하자.
-```shell
+	```shell
 	# samtools --help
 	
 	Program: samtools (Tools for alignments in the SAM format)
@@ -160,4 +153,100 @@ Download the source code here: [samtools-1.18.tar.bz2](https://github.com/samtoo
 	
 	Commands:
 	...
+	```
+## 4. 인터넷에서 BAM파일을 받아 variant calling을 시도해보자
+- Variant calling을 수행하게 하는 caller의 종류는 여러가지가 있다.
+	- DeepVariant
+	- GATK의 HaploTypeCaller
+	- Vardict 등등....
+- 오늘은 GATK의 HaploTypeCaller를 통하여 calling을 시도해보자.
+## NCBI에서 받고자 하는 데이터 검색하기
+- National Center for Biotechnology Information(NCBI)는 미국 국립보건원에서 운영하고 있는 생물정보학 DB다.
+- NCBI의 DB는 여러가지 종류가 있는데, 그중 Sequence Read Archive(SRA)에 sequencing 데이터 모음을 받을 수 있다.
+	- SRA에서 BRCA와 관련된 용량이 작은 데이터를 검색해봤다.
+		- SRA에서 한번 검색한 다음, SRA run selector로 결과를 보내겠냐는 메시지를 클릭하면 좀 더 편하게 정렬하여 검색이 가능하다.
+		- 추천하는 방식으로는 '관심있는 질병의 유전자명'으로 검색한 다음, 필터의 access 항목에 'public'으로 필터를 건 다음에 SRA run selector로 결과를 보내서 용량이 작은 순으로 정렬하여 파일을 받는 것이다. Access type에 대한 필터는 run selector에 없는 것으로 보이기 때문이다.
+	- [SRR9929551](https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&page_size=10&acc=SRR9929551&display=alignment) 를 선택
+	- 그러나 SRA 웹사이트에서 데이터를 바로 받을 수는 없다.
+- SRA DB에서 데이터를 받기 위해서는 SRAtoolkit을 설치한 다음, 명령어를 통해 받을 수 있다.  
+## NCBI SRA DB에서 데이터를 받기 위해 SRAToolKit 설치하기
+[Installing SRA Toolkit](https://github.com/ncbi/sra-tools/wiki/02.-Installing-SRA-Toolkit)
+- 툴킷을 Rocky Linux 내로 바로 다운받는다.
+	- `wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-centos_linux64.tar.gz`
+	- `gzip -d sratoolkit.current-centos_linux64.tar.gz`
+	- `tar -xvf sratoolkit.current-centos_linux64.tar`
+- 필요한 경우 Github의 설명에 따라 환경변수에 경로를 추가할 수도 있다.
+- BAM파일만 받을 생각이기 때문에 여러가지 툴 중에서 `sam-dump` 툴을 활용한다.
+	- 받으려는 SRA 데이터의 번호는 `SRR9929551`
+	- `sam-dump` 툴은 파일 내용을 그대로 읽어서 출력하기 때문에, 이를 저장해줘야한다.
+		- `/download/sratoolkit.3.0.6-centos_linux64/bin/sam-dump SRR9929551 >> SRR9929551.sam`
+	- `sam-dump` 이외에 자주 사용되는 명령어로는....    
+	  `prefetch`: BAM파일 뿐 아니라 관련된 전체 데이터를 받는다.    
+	  `fastq-dump`: fastq파일만 받는다
+
+## SAMtools를 이용하여 SAM 파일을 BAM 파일로 변환하기
+- SAMtools의 `view` 기능을 이용하여 BAM 파일로 저장하여준다.
+	- `samtools view -b -o SRR9929551.bam SRR992551.sam`
+- BAM파일의 index파일도 작성하여 준다.
+	- `samtools index SRR9929551.bam -o SRR9929551.bam.bai`
+
+## SAMtools를 이용하여 BAM파일의 reference 파일 확인하고 다운받기
+- GATK HaploTypeCaller의 경우 두 가지의 input 파일이 필요하다.
+	1) BAM 파일
+	2) BAM 파일이 만들어질 때 사용된 reference fasta 파일
+		- Reference 파일은 index 파일과 dict 파일과 함께 존재해야한다.
+- `samtools view --header-only` 옵션을 통하여 reference 파일을 파악하자
+	```shell
+	# samtools view --header-only SRR9929551.bam | grep "reference"
+@PG     ID:tmap CL:mapall -n 12 -f /results/referenceLibrary/tmap-f3/hg19/hg19.fasta -r basecaller_results/IonXpress_016_rawlib.basecaller.bam -v -Y -u --prefix-exclude 5 -o 2 stage1 map4     VN:5.0.7 (517ac65) (201509092132)
+	```
+- 구글링을 통하여 `tmap`은 torrent mapping의 준말로 iontorrent에서 제공되는 reference 파일로 파악되었다.
+- [구글링](https://github.com/domibel/IonTorrent-VariantCaller#get-reference-genome-hg19-from-ion-torrent-size-868170684-828m)을 통하여 reference fasta 파일을 다운로드 받았다.
+	- `wget http://ionupdates.com/reference/hg19.zip`
+	- `unzip hg19.zip`
+- Reference fasta 파일의 index과 dict 파일을 생성하여 HaplotypeCaller를 위한 준비를 한다.
+	- `samtools faidx hg19.fasta`
+	- `samtools dict hg19.fasta -o hg19.dict`
+
+## HaplotypeCaller 실행하기
+```shell
+# ./gatk-4.4.0.0/gatk HaplotypeCaller -R hg19.fasta -I SRR9929551.bam -O test.vcf.gz
+Using GATK jar /download/gatk-4.4.0.0/gatk-package-4.4.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /download/gatk-4.4.0.0/gatk-package-4.4.0.0-local.jar HaplotypeCaller -R hg19.fasta -I SRR9929551.bam -O test.vcf.gz
+20:39:42.774 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/download/gatk-4.4.0.0/gatk-package-4.4.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+20:39:42.949 INFO  HaplotypeCaller - ------------------------------------------------------------
+20:39:42.956 INFO  HaplotypeCaller - The Genome Analysis Toolkit (GATK) v4.4.0.0
+20:39:42.956 INFO  HaplotypeCaller - For support and documentation go to https://software.broadinstitute.org/gatk/
+20:39:42.956 INFO  HaplotypeCaller - Executing as root@ROCKY on Linux v5.15.90.1-microsoft-standard-WSL2 amd64
+20:39:42.957 INFO  HaplotypeCaller - Java runtime: Java HotSpot(TM) 64-Bit Server VM v17.0.8+9-LTS-211
+20:39:42.957 INFO  HaplotypeCaller - Start Date/Time: August 6, 2023 at 8:39:42 PM UTC
+20:39:42.958 INFO  HaplotypeCaller - ------------------------------------------------------------
+20:39:42.958 INFO  HaplotypeCaller - ------------------------------------------------------------
+20:39:42.960 INFO  HaplotypeCaller - HTSJDK Version: 3.0.5
+20:39:42.961 INFO  HaplotypeCaller - Picard Version: 3.0.0
+20:39:42.961 INFO  HaplotypeCaller - Built for Spark Version: 3.3.1
+20:39:42.963 INFO  HaplotypeCaller - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+20:39:42.964 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+20:39:42.965 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+20:39:42.968 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+20:39:42.968 INFO  HaplotypeCaller - Deflater: IntelDeflater
+20:39:42.969 INFO  HaplotypeCaller - Inflater: IntelInflater
+20:39:42.969 INFO  HaplotypeCaller - GCS max retries/reopens: 20
+20:39:42.969 INFO  HaplotypeCaller - Requester pays: disabled
+20:39:42.971 INFO  HaplotypeCaller - Initializing engine
+20:39:43.816 INFO  HaplotypeCaller - Done initializing engine
+20:39:43.927 INFO  HaplotypeCallerEngine - Disabling physical phasing, which is supported only for reference-model confidence output
+20:39:43.993 INFO  NativeLibraryLoader - Loading libgkl_utils.so from jar:file:/download/gatk-4.4.0.0/gatk-package-4.4.0.0-local.jar!/com/intel/gkl/native/libgkl_utils.so
+20:39:44.003 INFO  NativeLibraryLoader - Loading libgkl_pairhmm_omp.so from jar:file:/download/gatk-4.4.0.0/gatk-package-4.4.0.0-local.jar!/com/intel/gkl/native/libgkl_pairhmm_omp.so
+20:39:44.096 INFO  IntelPairHmm - Using CPU-supported AVX-512 instructions
+20:39:44.097 INFO  IntelPairHmm - Flush-to-zero (FTZ) is enabled when running PairHMM
+20:39:44.098 INFO  IntelPairHmm - Available threads: 8
+20:39:44.101 INFO  IntelPairHmm - Requested threads: 4
+20:39:44.102 INFO  PairHMM - Using the OpenMP multi-threaded AVX-accelerated native PairHMM implementation
+20:39:44.264 INFO  ProgressMeter - Starting traversal
+20:39:44.266 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Regions Processed   Regions/Minute
+20:39:54.299 INFO  ProgressMeter -        chr1:15651665              0.2                 52180         313080.0
 ```
+
+ProgressMeter가 뜨면 variant calling이 진행되기 시작한 것이다.
