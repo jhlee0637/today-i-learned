@@ -1,10 +1,14 @@
+# 목표
+- 어떠한 준비도 되어있지 않은 방금 설치한 linux system에 대하여
+- HaplotypeCaller만 돌릴 수 있는 환경을 구성해본다.
 # 준비된 환경
 1. Rocky Linux 9
 	- Docker를 활용하여 windows11 환경에서 구축
-2. 서버를 다루기 편하도록 docker와 Visual Studio Code와 연결시킴
-	- VSCode의 docker 확장프로그램을 통하여 연결
-	- Docker window의 bash 혹은 VSCode에서 attach to bash로 접속하면 cluster system에 접속할 때 처럼 bash가 뜬다. (`sh-5.1#`)
-	- VSCode에서 attach to VScode를 통하여, 새 창을 열어서 접속한다.
+2. 서버를 다루기 편하도록 Docker와 Visual Studio Code를 서로 연결
+	- VSCode의 Docker 확장프로그램을 통하여 연결
+	- Docker 내의 Rocky Linux 9에서 터미널 열기
+		- Docker Window의 bash 혹은 VSCode에서 attach to bash로 접속하면 cluster system에 접속할 때 처럼 bash가 뜬다. (`sh-5.1#`)
+		- Docker에서 Rocky Linux 9이 깔린 컨테이너를 실행한 다음, VSCode에서 해당 컨테이어와 터미널을 연결시키면 새 창에서 접속하게 된다.
 # 1. 자주 사용하는 기본적인 패키지, 라이브러리 설치
 ## 기본상식: yum? dnf? apt? sudo?
 - `yum`과 `apt`는 모두 패키지 설치 관리자다. 다만 같은 리눅스 계열이라 할지라도 어느 리눅스 시스템을 쓰느냐에 따라 다른 패키지 설치 관리자를 사용하게 된다.
@@ -31,22 +35,19 @@
 
 **unzip** `yum install unzip`
 
-# 2. 막무가내로 GATK부터 설치
+# 2. GATK부터 설치
 ## GATK를 다운받자
-- Anaconda로 받거나, 공식 github에서 clone으로 받거나, docker image로 받거나 여러 방법이 있다.
-	- [Getting started with GATK4](https://gatk.broadinstitute.org/hc/en-us/articles/360036194592-Getting-started-with-GATK4)
-- 그러나 해당 방법들은 다시 추가적인 환경 구축을 요구한다 -> 귀찮다
 - 간단하게 파일만 받아서 설치하자.
-- [GATK github /release](https://github.com/broadinstitute/gatk/releases)
-	- 파일을 다운 받는다.
+	- 파일을 다운 받는다: [GATK github /release](https://github.com/broadinstitute/gatk/releases)
 	- `unzip gatk-4.4.0.0.zip`
-	- 끝
+- 위와 같은 간단한 방법 말고도, Anaconda로 받거나, 공식 github에서 clone으로 받거나, docker image로 받거나 여러 방법이 있다. [참고: Getting started with GATK4](https://gatk.broadinstitute.org/hc/en-us/articles/360036194592-Getting-started-with-GATK4)
+	- 그러나 이런 방법들은 다시 추가적인 환경 구축을 요구한다 -> 귀찮다
 - 대신 수동설치는 최신버전을 받기 위해서 주기적으로 수동설치를 요구한다는 단점 아닌 단점이 있다.
 	- 파이프라인의 안정성 유지와 최신 버전을 통한 성능향상은 모두 중요하다.
 	- 최신 버전이 항상 더 나은 퍼포먼스를 약속하지 않으며, 예상치 못한 버그를 일으킬 수 있다.
 ## GATK를 위한 필수프로그램들을 다운받자
-[GATK github #requirements](https://github.com/broadinstitute/gatk#requirements)
-- GATK를 run하기 위한 필수항목과 build하기 위한 필수항목이 다르게 적혀있다. 이번에는 run만을 위한 프로그램만 설치한다.
+[GATK requirements](https://github.com/broadinstitute/gatk#requirements)
+- 필수 프로그램들은 run/build 목적에 따라 다르게 소개된다. 이번에는 run만을 위한 프로그램만 설치한다.
 1. 특정 버전의 JAVA
 	- 4.4.0.0 버전의 경우 OpenJDK 17 버전을 요구하고 있다.
 	- 향후에 요구사항이 바뀔 수 있으니 설치 전에 항상 requirement 부분을 잘 읽어보자
@@ -54,10 +55,10 @@
 	- `wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm`
 	- `yum -y install ./jdk-17_linux-x64_bin.rpm`
 	- 버전확인도 수행하자
-	```shell
-	# java --version
-	java 17.0.8 2023-07-18 LTS
-	```
+		```shell
+		# java --version
+		java 17.0.8 2023-07-18 LTS
+		```
 1.  Python
 	- 이미 설치했다
 2.  R
@@ -129,7 +130,8 @@ Download the source code here: [samtools-1.18.tar.bz2](https://github.com/samtoo
 	```
 	- 위의 메시지를 종합하면 SAMtools의 tview 기능을 사용하기 위해서는 ncurse 패키지를 설치하거나 --without-curses 옵션을 사용하라는 것이다.
 	- SAMtools를 설치하는 과정에서 이와 같은 오류 메시지는 4번 정도 발생하게 되므로, 옵션으로 생략하기 보다는 그냥 다 설치하는 편이 낫다.
-	- 메시지에서 중요하게 읽어야 하는 부분은 다음의 부분이다: "you may need to ensure a package such as libncurses5-dev (on Debian or Ubuntu Linux) or ncurses-devel (on RPM-based Linux distributions) is installed."
+	- 메시지에서 중요하게 읽어야 하는 부분은 다음의 부분이다:    
+	  *"you may need to ensure a package such as libncurses5-dev (on Debian or Ubuntu Linux) or ncurses-devel (on RPM-based Linux distributions) is installed."*
 		- 리눅스 시스템 계열에 따라 다른 패키지를 설치해야한다.
 		- Rocky Linux의 경우 RPM-based Linux distribution이다.
 		- 따라서, `yum install ncurses-devel` 명령어로 ncurse를 설치한 다음, 다시 `./configure` 명령어로 설치환경 구성을 시도해야한다.
@@ -157,9 +159,9 @@ Download the source code here: [samtools-1.18.tar.bz2](https://github.com/samtoo
 ## 4. 인터넷에서 BAM파일을 받아 variant calling을 시도해보자
 - Variant calling을 수행하게 하는 caller의 종류는 여러가지가 있다.
 	- DeepVariant
-	- GATK의 HaploTypeCaller
+	- GATK의 HaplotypeCaller
 	- Vardict 등등....
-- 오늘은 GATK의 HaploTypeCaller를 통하여 calling을 시도해보자.
+- 오늘은 GATK의 HaplotypeCaller를 통하여 calling을 시도해보자.
 ## NCBI에서 받고자 하는 데이터 검색하기
 - National Center for Biotechnology Information(NCBI)는 미국 국립보건원에서 운영하고 있는 생물정보학 DB다.
 - NCBI의 DB는 여러가지 종류가 있는데, 그중 Sequence Read Archive(SRA)에 sequencing 데이터 모음을 받을 수 있다.
@@ -191,7 +193,7 @@ Download the source code here: [samtools-1.18.tar.bz2](https://github.com/samtoo
 	- `samtools index SRR9929551.bam -o SRR9929551.bam.bai`
 
 ## SAMtools를 이용하여 BAM파일의 reference 파일 확인하고 다운받기
-- GATK HaploTypeCaller의 경우 두 가지의 input 파일이 필요하다.
+- GATK HaployypeCaller의 경우 두 가지의 input 파일이 필요하다.
 	1) BAM 파일
 	2) BAM 파일이 만들어질 때 사용된 reference fasta 파일
 		- Reference 파일은 index 파일과 dict 파일과 함께 존재해야한다.
@@ -220,7 +222,7 @@ Running:
 20:39:42.956 INFO  HaplotypeCaller - For support and documentation go to https://software.broadinstitute.org/gatk/
 20:39:42.956 INFO  HaplotypeCaller - Executing as root@ROCKY on Linux v5.15.90.1-microsoft-standard-WSL2 amd64
 20:39:42.957 INFO  HaplotypeCaller - Java runtime: Java HotSpot(TM) 64-Bit Server VM v17.0.8+9-LTS-211
-20:39:42.957 INFO  HaplotypeCaller - Start Date/Time: August 6, 2023 at 8:39:42 PM UTC
+20:39:42.957 INFO  HaplotypeCaller - Start Date/Time: August 3, 2023 at 6:39:42 PM UTC
 20:39:42.958 INFO  HaplotypeCaller - ------------------------------------------------------------
 20:39:42.958 INFO  HaplotypeCaller - ------------------------------------------------------------
 20:39:42.960 INFO  HaplotypeCaller - HTSJDK Version: 3.0.5

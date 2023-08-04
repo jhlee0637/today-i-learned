@@ -1,13 +1,15 @@
 # 2023
 ## August
-03/August/2023 [Build Bioinformatics Workflow from scratch](./Build%20Bioinformatics%20Workflow%20from%20scratch.md)
+04/August/2023 [Build Workflow from scratch - HaplotypeCaller](./Build%20Workflow%20from%20scratch%20-%20HaplotypeCaller.md)
 
-02/August/2023 [Build Bioinformatics Workflow from scratch](./Build%20Bioinformatics%20Workflow%20from%20scratch.md) (ongoing)
+03/August/2023 [Build Workflow from scratch - HaplotypeCaller](./Build%20Workflow%20from%20scratch%20-%20HaplotypeCaller.md) (ongoing)
 
-01/August/2023 [Build Bioinformatics Workflow from scratch](./Build%20Bioinformatics%20Workflow%20from%20scratch.md) (ongoing)
+02/August/2023 [Build Workflow from scratch - HaplotypeCaller](./Build%20Workflow%20from%20scratch%20-%20HaplotypeCaller.md) (ongoing)
+
+01/August/2023 [Build Workflow from scratch - HaplotypeCaller](./Build%20Workflow%20from%20scratch%20-%20HaplotypeCaller.md) (ongoing)
 
 ## July
-31/July/2023 [Build Bioinformatics Workflow from scratch](./Build%20Bioinformatics%20Workflow%20from%20scratch.md) (ongoing)
+31/July/2023 [Build Workflow from scratch - HaplotypeCaller](./Build%20Workflow%20from%20scratch%20-%20HaplotypeCaller.md) (ongoing)
 
 30/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 7](./edwith_LSnDP_Ch7.md)
 
