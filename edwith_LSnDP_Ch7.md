@@ -2,7 +2,7 @@
 Chapter 7: Algorithm Analysis
 # What is the Algorithm?
 - A clearly specified set of simple instructions to be followed to solve a problem
-- Take input > give output
+- Take input -> give output
 - Program is a combination of algorithm and data structures
 - Examples of algorithms...
 	- insertion, deletion, search, stack, queue, **sorting**, ...
@@ -16,8 +16,9 @@ Chapter 7: Algorithm Analysis
 	- when you find the bigger element, exchange the location of them
 	- If you reach to the end, start from the second element
 
-|3*|2|1|5*|4| 3 is smaller than 5. Exchange the location.|
+| | | | | | |
 |:-:|:-:|:-:|:-:|:-:|:-|
+|3*|2|1|5*|4| 3 is smaller than 5. Exchange the location.|
 |5*|2|1|3|4| nothing is smller than 5.|
 |5|2*|1|3*|4|2 is smaller than 3. Exchange the location.|
 |5|3*|1|2|4*|3 is smaller than 4. Exchange the location.|
@@ -28,13 +29,14 @@ Chapter 7: Algorithm Analysis
 |5|4|3|2*|1|nothing is smller than 2.|
 
 - We can describe the algorithm in pseudo code
->	for itr1 = 0 to length(list)
->		for itr2 = itr + 1 to length(list)
->			if list[itr1] < list[itr2]
->				swap list[itr1], list[itr2]
->	return list
-
-- Now, we can pratice it in python code
+```
+for itr1 = 0 to length(list)
+	for itr2 = itr + 1 to length(list)
+		if list[itr1] < list[itr2]
+			swap list[itr1], list[itr2]
+return list
+```
+- Now, we can pratice this pseudo code into practical python code
 ## Python practice
 ```python
 import random
@@ -60,7 +62,7 @@ print(performSelectionSort(lstNumbers2)) #[5, 5, 4, 3, 3, 3, 2, 2, 1, 0]
 ```
 
 # Algorithm Efficiency
-- Program could be inefficient
+- Program could be **inefficient**
 	- Large data -> running time becomes a big issue
 - We need a gurantee of the worst-case scenario
 	- Worst-case running time of a single transaction
@@ -97,7 +99,7 @@ print(calculateInegerRangeSum(0,10))
 - One example of asymptotic notation .
 - Show the worst-case running time
 $$\huge f(N) = O(g(N))$$
-- There are positive constants $\huge c$, and $\huge n_0$.
+- There are positive constants $c$, and $n_0$.
   when $N ≥ n_0$,
 $$\huge f(N) ≤ c＊g(N)$$
  - Big O notation ignores the lower-order terms, and the constants(coefficients) of highest-order term
@@ -105,7 +107,7 @@ $$\huge f(N) ≤ c＊g(N)$$
 	 - From the growth rate order    
 		   $\huge C^N > N^K > N^2 > NlogN > N > logN > C$
 		   $C≥2$ and $K>2$
-	 - Therefore, given example of simple algorithm analysis' total iteration $\huge 2N+2$ turns into $\huge O(N)$. The constant term $2N$ are disregarded, leaving only the $N$ term in the Big O notation.
+	 - Therefore, given example of simple algorithm analysis' total iteration $2N+2$ turns into $O(N)$. The constant term $2N$ are disregarded, leaving only the $N$ term in the Big O notation.
  
  - The growth rate of $f(N)$ is less than or equal to the growth rate of  $g(N)$
  - $g(N)$ is an uppder bound on $f(N)$
@@ -126,10 +128,13 @@ def performSelectionSort(lst):
 		- Assume that $for$ loops will reach to the end without problems, and $if$ always results in true
 	- How many items will be given from the second $for$ loop?
 		- Consider the frst $for$ loop together
-		- `for itr1 in range(0, len(lst)`: $\huge \sum_{i=0}^{N-1}$ 
-		- `for itr2 in range(itr1+1, len(lst)`: $\huge \sum_{j=i+1}^{N-1}$ 
-		- $$\huge \sum_{i=0}^{N-1} \sum_{j=i+1}^{N-1} 1= {1 \over 2}n^2 - {1 \over 2}n$$
-	- for single item from `for itr2 in range(itr1+1, len(lst)`, 3 iterations are needed
+		- `for itr1 in range(0, len(lst)`    
+		   $\huge \sum_{i=0}^{N-1}$ 
+		- `for itr2 in range(itr1+1, len(lst)`    
+		  $\huge \sum_{j=i+1}^{N-1}$ 
+		$$\huge \sum_{i=0}^{N-1} \sum_{j=i+1}^{N-1} 1= {1 \over 2}n^2 - {1 \over 2}n$$
+	- for single item from `for itr2 in range(itr1+1, len(lst)`,    
+	  3 iterations are needed
 		1) for itr2 in range(itr1+1, len(lst)
 		2) if lst[itr1] < lst[itr2] :
 		3) lst[itr1], lst[itr2] = lst[itr2], lst[itr1]
@@ -139,20 +144,27 @@ def performSelectionSort(lst):
    
    >Big O notation ignores constants and lower-order terms.
    
-   =$\huge O(N^2)$
+   = $\huge O(N^2)$
 
 ## Examples of Big O notation
-$$\huge O({N^2 \over 2-3N}) = O(N^2)$$
-$$\huge O(1+4N) = O(N)$$
-$$\huge O(7N^2 + 1-N + 3) =O(N^2)$$
+$$ O({N^2 \over 2-3N}) = O(N^2)$$
+
+$$O(1+4N) = O(N)$$
+
+$$O(7N^2 + 1-N + 3) =O(N^2)$$
+
 $$\begin{align}
 \huge O(logN)=O(log_{2}N) \\
 (log_{10}N = {{log_{2}N} \over {log_{2}10}}) \\
 \end{align}$$
-$$\huge O(sinN) = O(1)$$
-$$\huge O(10) = O(1)$$
-$$\huge O(10^10)=O(1)$$
-$$\huge O(log{N}+N)=O(N)$$
+
+$$O(sinN) = O(1)$$
+
+$$ O(10) = O(1)$$
+
+$$O(10^10)=O(1)$$
+
+$$O(log{N}+N)=O(N)$$
 ## Big O notation of list, stack, and queue
 | | List | Stack | Queue |
 |:-:|:-:|:-:|:-:|

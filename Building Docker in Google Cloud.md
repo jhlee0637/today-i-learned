@@ -39,6 +39,21 @@ https://docs.docker.com/desktop/install/windows-install/
 docker run --name RockyLinux9_test --hostname ROCKY -it rockylinux:9
 ```
 
+## 3. Container를 Image로 변환하기.
+- 만들어진 container 내에서 여러가지 프로그램 설치 및 작업을 수행하였다. 해당 container를 새로운 image로 제작하여, Google Cloud에 올릴 수 있게 준비한다.
+- 
+## 4. Google Cloud와 VScode 연결하기
+[VS Code용 Cloud Code 확장 프로그램 설치](https://cloud.google.com/code/docs/vscode/install?hl=ko)
+- 먼저 VS Code 확장프로그램 중에서 Google Cloud Code를 설치
+- VS Code를 재시작하면 Google Cloud Code 메뉴가 좌측에 생긴다
+	- Cloud Run 항목을 누르면 Google Cloud와 연결할 수 있게 웹페이지를 띄운다
+	- 구글로 로그인한다
+
+
+
+
+
+
 # 번외: Docker에 Rocky Linux image 받아오기
 - `docker run` 명령어의 경우 image가 없으면 자동으로 다운받는 과정이 포함되어 있다.
 - 만약 container를 생성하지 않고 image만 받고 싶은 경우, 다음과 같이 가능하다.
