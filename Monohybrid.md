@@ -13,12 +13,11 @@ https://opengenetics.pressbooks.tru.ca/chapter/one-locus-on-a-chromosome-segrega
 - In-bred populations of plants or animals in which all parents and their offspring have the same phenotypes with respect to a particular trait.
 - They are typically assumed to be homozygous for the alleles that affect the trait of interest.
 - When two individuals that are homozygous for the same alleles are crossed, all of their offspring will all also be homozygous.
-- The continuation of such crosses constitutes a true breeding line or strain.
+- The continuation of such crosses constitutes a true breeding line or strain.    
 
-![](http://opengenetics.pressbooks.tru.ca/wp-content/uploads/sites/42/2020/11/ch1-pic8.png)
-*(a) A True-Breeding Line
+![](http://opengenetics.pressbooks.tru.ca/wp-content/uploads/sites/42/2020/11/ch1-pic8.png)    
+*(a) A True-Breeding Line    
 (b) A Monohybrid Cross Produced by Mating Two Different Pure-Breeding Lines*
-
 ## Monohybrid Crosses
 - A **monohybrid cross** is one in which both parents are heterozygous (or a hybrid) for a single (mono) trait.
 - By using monohybrid crosses, Mendel discovered that genes were discrete units that separated in the creation of offspring.
