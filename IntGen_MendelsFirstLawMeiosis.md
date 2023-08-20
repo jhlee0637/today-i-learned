@@ -58,7 +58,7 @@ https://opengenetics.pressbooks.tru.ca/chapter/introduction-2/
 	- Telophase I
 	  말
 - During synapsis, proteins bind to both homologous chromosomes along their entire length and form the **synaptonemal complex** (synapse means junction). These proteins hold the chromosomes in the transient structure of a bivalent. The proteins are released when the cell enters Anaphase I.    
-  접합(synapsis)과정 동안에, 단백질이 두 개의 상동염색체(homologous chromosome)에 전체에 달라붙어 **이음실복합체(synaptonemal complex)** 를 형성한다. 이 단백질은 염색체(chromosome)들을 이가(bivalent)의 임시형태로 유지 시킨다. 단백질들은 세포가 후기(Anaphase) I에 진입할 때 풀어준다.
+  접합(synapsis)과정 동안에, 단백질이 두 개의 상동염색체(homologous chromosome)에 전체에 달라붙어 **이음실복합체(synaptonemal complex)** 를 형성한다. 이 단백질은 염색체(chromosome)들을 이가(bivalent)의 임시형태로 유지 시킨다. 단백질들은 세포가 후기(Anaphase) I에 진입할 때 풀어준다.    
 	![image](http://opengenetics.pressbooks.tru.ca/wp-content/uploads/sites/42/2020/11/ch1-pic7.png)
 ### Meiosis I - Prophase I
 - Initially, chromosomes condense and become visible and centrosomes begin to migrate to opposite poles of the cell    
