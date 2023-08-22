@@ -1,16 +1,16 @@
 # 2023
 ## August
-18/August/2023 [Punnett Squares](./Punnett%20Squares.md)
+18/August/2023 [Punnett Squares](./IntGen_1.5_PunnettSquares.md)
 
-16/August/2023 [Monohybrid](./Monohybrid.md)
+16/August/2023 [Monohybrid](./IntGen_1.4_Monohybrid.md)
 
-16/August/2023 [Monohybrid](./Monohybrid.md) (ongoing)
+16/August/2023 [Monohybrid](./IntGen_1.4_Monohybrid.md) (ongoing)
 
-09/August/2023 [Mendel's First Law and Meiosis](./Mendel's%20First%20Law%20and%20Meiosis.md)
+09/August/2023 [Mendel's First Law and Meiosis](./IntGen_1.1-1.3_MendelsFirstLawMeiosis.md)
 
-08/August/2023 [Somatic mutation vs. Germline mutation](./Somatic%20mutation%20vs.%20Germline%20mutation.md)
+08/August/2023 [Somatic mutation vs. Germline mutation](./IntGen_6.2_SomaticMutVsGermlineMut.md)
 
-07/August/2023 [Single Cell Best Practice](./Single%20Cell%20Best%20Practice.md) (ongoing)
+07/August/2023 [Single Cell Best Practice](./SingleCellBestPractice-1.Introduction.md) (ongoing)
 
 05/August/2023 [AlphaFold1, AlphaFold2, and RoseTTAFold](./AlphaFold1,%20AlphaFold2,%20and%20RoseTTAFold.md)
 
