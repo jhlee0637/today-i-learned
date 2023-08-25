@@ -1,7 +1,7 @@
-https://www.sc-best-practices.org/preamble.html
-\*2023년 8월 기준으로 작성된 문서 내용을 복사한 것이며, 해당 문서는 꾸준히 수정이 되어지고 있음
-\*개인적으로 읽을만했던 내용만 복사해옴
-\*문장 전체를 직역하지 않음
+https://www.sc-best-practices.org/preamble.html    
+\*2023년 8월 기준으로 작성된 문서 내용을 복사한 것이며, 해당 문서는 꾸준히 수정이 되어지고 있음    
+\*개인적으로 읽을만했던 내용만 복사해옴    
+\*문장 전체를 직역하지 않음    
 # INTRODUCTION
 ## [1. Prior art](https://www.sc-best-practices.org/introduction/prior_art.html)
 
@@ -11,16 +11,20 @@ https://www.sc-best-practices.org/preamble.html
 - RNA-Seq largely follows the DNA sequencing protocols, but includes a reverse transcription step where complementary DNA (cDNA) is synthesized from the RNA template.    
   *RNA-Seq은 DNA sequencing protocol을 많이 따르지만, 차이점으로 RNA template에서 complementary DNA를 합성하기 위한 reverse transcription 과정이 포함된다.*
 ## 2.5 Single-cell RNA sequencing
-### 2.5.1. Overview
+
+**2.5.1. Overview**
+
 - Sequencing of RNA can be mainly conducted in two ways:    
   *RNA sequencing 주요 방법 두 가지:*     
 	1) Either by sequencing the mixed RNA from the source of interest across cells (bulk sequencing)    
-	   *bulk sequencing - 여러 세포에서 유래한 RNA들을 sequencing하기*     
+	   *여러 세포에서 유래한 RNA들을 sequencing하기*     
 	2) by sequencing the transcriptomes of the cells individually (single-cell sequencing).    
-	   *single-cell sequencing - 각 세포에서 유래한 transcriptiomes를 sequencing하기* 
+	   *각 세포에서 유래한 transcriptiomes를 sequencing하기* 
 	      
-- Some drugs or perturbations may affect only specific cell types or interactions between cell types. To uncover such relationships, it is vital to examine gene expression on a single-cell level.     
-  *특정 약물이나 교란법(perturbation)은 특정한 세포종류들 혹은 상호작용 영향일 미칠 수 있다. 이러한 관계를 밝혀내기 위해 single-cell 수준의 유전자 발현 조사가 중요.*
+- Some drugs or perturbations may affect only specific cell types or interactions between cell types.    
+  *특정 약물이나 교란법(perturbation)은 특정한 세포종류들 혹은 상호작용 영향일 미칠 수 있다.*
+- To uncover such relationships, it is vital to examine gene expression on a single-cell level.    
+  *이러한 관계를 밝혀내기 위해 single-cell 수준의 유전자 발현 조사가 중요.*
 
 - Single-cell RNA-Seq (scRNA-Seq) does, however, come with several caveats.    
   *sRNA-seq의 단점(caveat)*
@@ -42,59 +46,81 @@ https://www.sc-best-practices.org/preamble.html
 	- single-cell isolation
 	- transcript amplification
 	- sequencing(depending on the sequencing machine)   
-### 2.5.2 Transcript quantification
+
+**2.5.2 Transcript quantification**
+
 - Transcript quantification is the process of counting the hits of the sequenced transcripts against the gene sequences.    
   *Transcript quantification이란 유전자 서열과 대응하는 sequenced transcripts 수를 세는 과정이다.*
-- There are two major approaches to transcript quantification: full-length and tag-based.
-	- Full-length protocols try to cover the whole transcript uniformly with sequencing reads    
-	  *transcript 전체를 sequencing reads와 비교*
-	- Tag-based protocols only capture the 5’ or 3’ ends.     
-	  *5' end 혹은 3' end만 비교*  
-
-
+- There are two major approaches to transcript quantification:
+	1) Full-length protocols
+		- try to cover the whole transcript uniformly with sequencing reads    
+		  *transcript 전체를 sequencing reads와 비교*
+	- Tag-based protocols
+		- only capture the 5’ or 3’ ends.     
+		  *5' end 혹은 3' end만 비교*  
+		  
 - The usage of UMIs is a common solution to quantify the original, non-duplicated molecules.    
-  *UMIs는 증폭과정을 거치지 않은 본래의 (유전)분자물질을 정량하는 일반적인 방법이다.**
-	- The UMIs serve as molecular barcodes and are also sometimes referred to as random barcodes.
+  *UMIs는 증폭과정을 거치지 않은 본래의 (유전)분자물질을 정량하는 일반적인 방법이다.*
+	- The UMIs serve as molecular barcodes and are also sometimes referred to as random barcodes.    
 	  *UMIs는 분자바코드로 때로는 랜덤바코드로 불린다.*
-	- These ‘barcodes’ consist of short random nucleotide sequences that are added to every molecule in the sample as a unique tag.
+	- These ‘barcodes’ consist of short random nucleotide sequences that are added to every molecule in the sample as a unique tag.    
 	  *이 '바코드'들은 짧은 뉴클레오타이드 서열들이 랜덤하게 이루어진 형태이다. 이 서열들은 하나의 unique tag로 붙여지게 된다.* 
 	- UMIs must be added during library generation before the amplification step.    
 	  *UMIs는 반드시 amplication step 이전인 library generation 과정에서 붙여져야한다.*
-### 2.5.3 Single-cell sequencing protocols
-  - Currently, three types of single-cell sequencing protocols exist, which are grouped primarily by their cell isolation protocols:    
-    *현재는 cell isolation protocol에 따라 3개의 방식으로 분류한다.
-	  - **Microfluidic device-based strategies**    
-	    cells are encapsulated into hydrogel droplets    
-	    *세포를 hydrogel droplet을 이용해서 분리*
-	  - **Well plate based protocols**    
-	    cells are physically separated into wells     
-	    *세포를 well을 이용해서 분리*
-	  - **The commercial Fluidigm C1 microfluidic chip based solution**    
-	    loads and separates cells into small reaction chambers.     
-	    *세포를 small reaction chamber를 이용해서 분리*
-#### 2.5.3.4. Nanopore single-cell transcriptome sequencing
-- [Lebrigand _et al._, 2020](https://www.nature.com/articles/s41467-020-17800-6)introduced ScNaUmi-seq (Single-cell Nanopore sequencing with UMIs) which combines Nanopore sequencing with cell barcode and UMI assignment. The barcode assignment is guided with Illumina data by comparing the cell bar code sequences found in the Nanopore reads with those recovered from the Illumina reads for the same region or gene.
-- However, this effectively requires two single-cell libraries.
-- scCOLOR-seq([Philpott _et al._, 2021](https://www.nature.com/articles/s41587-021-00965-w)) computationally identifies barcodes without errors using nucleotide pair complementary across the full length of the barcode. These barcodes are then used as guides to correct the remaining erroneous barcodes. A modified UMI-tools directional network based method corrects for UMI sequence duplication.
+
+**2.5.3 Single-cell sequencing protocols**
+
+- Currently, three types of single-cell sequencing protocols exist, which are grouped primarily by their cell isolation protocols:    
+  *현재는 cell isolation protocol에 따라 3개의 방식으로 분류한다.*
+	1) Microfluidic device-based strategies    
+		  -  cells are encapsulated into hydrogel droplets    
+		     *세포를 hydrogel droplet을 이용해서 분리*
+	2) Well plate based protocols    
+		- cells are physically separated into wells     
+		  *세포를 well을 이용해서 분리*
+	3) The commercial Fluidigm C1 microfluidic chip based solution
+		- loads and separates cells into small reaction chambers.     
+		  *세포를 small reaction chamber를 이용해서 분리*
+
+**2.5.3.4. Nanopore single-cell transcriptome sequencing**
+
+- [Lebrigand _et al._, 2020](https://www.nature.com/articles/s41467-020-17800-6)introduced ScNaUmi-seq (Single-cell Nanopore sequencing with UMIs) which combines Nanopore sequencing with cell barcode and UMI assignment.
+	- The barcode assignment is guided with Illumina data by comparing the cell bar code sequences found in the Nanopore reads with those recovered from the Illumina reads for the same region or gene.
+	- However, this effectively requires two single-cell libraries.
+- scCOLOR-seq([Philpott _et al._, 2021](https://www.nature.com/articles/s41587-021-00965-w)) computationally identifies barcodes without errors using nucleotide pair complementary across the full length of the barcode.
+	- These barcodes are then used as guides to correct the remaining erroneous barcodes.
+	- A modified UMI-tools directional network based method corrects for UMI sequence duplication.
+
 - Strengths:
 	- Recovers splicing and sequence heterogeneity information
+
 - Weaknesses:
 	- Nanopore reagents are expensive.
 	- High cell barcode recovery error rates.
 	- Depending on the protocol, barcode assignment is guided with Illumina data requiring two sequencing assays.
 #### 2.5.3.5 Summary
 - In summary, we strongly recommend that wet lab and dry lab scientists select the sequencing protocol based on the aim of the study.
-- Is a deep characterization of a specific cell type population desired? In this case one of the plate-based methods may be more suitable.
-- On the contrary, droplet based assays will capture heterogeneous mixtures better, allowing for a more broad characterization of the sequenced cells.
-- Moreover, if the budget is a limiting factor, the protocol of choice should be more cost-effective and robust.
-- When analyzing the data, be aware of the sequencing assay specific biases. For an extensive comparison of all single-cell sequencing protocols, we recommend the “Benchmarking single-cell RNA-sequencing protocols for cell atlas projects” paper by [Mereu et al., 2020](https://www.nature.com/articles/s41587-020-0469-4).
+	- Is a deep characterization of a specific cell type population desired?
+		- In this case one of the plate-based methods may be more suitable.
+	- On the contrary, droplet based assays will capture heterogeneous mixtures better, allowing for a more broad characterization of the sequenced cells.
+	- Moreover, if the budget is a limiting factor, the protocol of choice should be more cost-effective and robust.
+
+- When analyzing the data, be aware of the sequencing assay specific biases.
+	- For an extensive comparison of all single-cell sequencing protocols, we recommend the “Benchmarking single-cell RNA-sequencing protocols for cell atlas projects” paper by [Mereu et al., 2020](https://www.nature.com/articles/s41587-020-0469-4).
 ### 2.5.4 single-cell vs single-nuclei
 - So far we have only been discussing single-cell assays, but it is also possible to only sequence the nuclei of the cells.
-- Single-cell profiling does not always provide an unbiased view on cell types for specific tissues or organs, such as, for example, the brain. During the tissue dissociation process, some cell types are more vulnerable and therefore difficult to capture.
-- Moreover, single-cell sequencing highly relies on fresh tissue, making it difficult to make use of tissue biobanks.
+
+- Single-cell profiling does not always provide an unbiased view on cell types for specific tissues or organs, such as, for example, the brain.
+	- During the tissue dissociation process, some cell types are more vulnerable and therefore difficult to capture.
+	- Moreover, single-cell sequencing highly relies on fresh tissue, making it difficult to make use of tissue biobanks.
+
 - On the other hand, the nuclei are more resistant to mechanical force, and can be safely isolated from frozen tissue without the use of tissue dissociation enzymes[Krishnaswami et al., 2016].
-- Both options have varying applicability across tissues and sample types, and the resulting biases and uncertainties are still not fully uncovered. It has been shown already that nuclei accurately reflect all transcriptional patterns of cells[Ding et al., 2020].
-- The choice of single-cell versus single-nuclei in the experimental design is mostly driven by the type of tissue sample. Data analysis however should be aware of the fact that dissociation ability will have a strong effect on the potentially observable cell types. Therefore, we strongly encourage discussions between wet lab and dry lab scientists concerning the experimental design.
+
+- Both options have varying applicability across tissues and sample types, and the resulting biases and uncertainties are still not fully uncovered.
+	- It has been shown already that nuclei accurately reflect all transcriptional patterns of cells[Ding et al., 2020].
+	- The choice of single-cell versus single-nuclei in the experimental design is mostly driven by the type of tissue sample.
+- Data analysis however should be aware of the fact that dissociation ability will have a strong effect on the potentially observable cell types.
+- Therefore, we strongly encourage discussions between wet lab and dry lab scientists concerning the experimental design.
 # [3. Raw data processing](https://www.sc-best-practices.org/introduction/raw_data_processing.html)
 - Here, we will primarily refer to this phase of processing as “raw data processing”, and our focus will be on the phase of data analysis that begins with lane-demultiplexed FASTQ files, and ends with a count matrix representing the estimated number of distinct molecules arising from each gene within each quantified cell, potentially stratified by the inferred splicing status of each molecule (Fig. 3.1).    
 

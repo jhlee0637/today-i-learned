@@ -44,7 +44,7 @@ https://opengenetics.pressbooks.tru.ca/chapter/introduction-2/
 	  
 ## Meiosis I
 - Cells that will undergo meiosis are called **meiocytes** and are diploid (2N)    
-  감수분열(meiosis)를 거치는 세포들은 **감수모세포(meiocyte)**라고 불리며 이배체(diploid)(2N) 상태이다.
+  감수분열(meiosis)를 거치는 세포들은 **감수모세포(meiocyte)** 라고 불리며 이배체(diploid)(2N) 상태이다.
 - Meiosis I is called a **reductional** division, because it reduces the number of chromosomes inherited in each of the daughter cells – the parent cell is 2N while the two daughter cells are each 1N.    
   감수분열(meiosis) I 단계는 염색체(chromosome)의 수가 줄어들어 딸세포들로 유전되기 때문에 분열(a reductional divison)이라고 불린다 - 부모세포는 2N인 반면에 두 개의 딸세포들은 각각 1N 상태다.
 - Meiosis I is further divided into...    
