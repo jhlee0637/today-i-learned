@@ -83,9 +83,10 @@ https://www.sc-best-practices.org/preamble.html
 		  *세포를 small reaction chamber를 이용해서 분리*
 
 **2.5.3.4. Nanopore single-cell transcriptome sequencing**
-
-- [Lebrigand _et al._, 2020](https://www.nature.com/articles/s41467-020-17800-6)introduced ScNaUmi-seq (Single-cell Nanopore sequencing with UMIs) which combines Nanopore sequencing with cell barcode and UMI assignment.
-	- The barcode assignment is guided with Illumina data by comparing the cell bar code sequences found in the Nanopore reads with those recovered from the Illumina reads for the same region or gene.
+- [Lebrigand _et al._, 2020](https://www.nature.com/articles/s41467-020-17800-6)introduced ScNaUmi-seq (Single-cell Nanopore sequencing with UMIs) which combines Nanopore sequencing with cell barcode and UMI assignment.    
+  Lebrigand는 나노포어 시퀀싱과 바코드, UMI 식별법을 결합한 ScNaUmi-seq을 공개했다.
+	- The barcode assignment is guided with Illumina data by comparing the cell bar code sequences found in the Nanopore reads with those recovered from the Illumina reads for the same region or gene.    
+	  바코드 식별법은 
 	- However, this effectively requires two single-cell libraries.
 - scCOLOR-seq([Philpott _et al._, 2021](https://www.nature.com/articles/s41587-021-00965-w)) computationally identifies barcodes without errors using nucleotide pair complementary across the full length of the barcode.
 	- These barcodes are then used as guides to correct the remaining erroneous barcodes.

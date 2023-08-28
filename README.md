@@ -1,5 +1,6 @@
 # 2023
 ## August
+27/August/2023 [paper: Dealing with dimensionality: the application of machine learning to multi-omics data](./Paper_DealingWithDimensionality-TheApplicationOfMachineLearningToMulti-omicsData.md) (ongoing)    
 22/August/2023 [Single Cell Best Practice 1.Introduction](./SingleCellBestPractice-1.Introduction.md) (ongoing)    
 18/August/2023 [Punnett Squares](./IntGen_1.5_PunnettSquares.md)    
 16/August/2023 [Monohybrid](./IntGen_1.4_Monohybrid.md)    
