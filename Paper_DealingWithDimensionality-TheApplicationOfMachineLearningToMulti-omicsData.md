@@ -52,11 +52,11 @@ Number in the reviewed multi-omics ML papers of ML goals (**b**) and labels used
 - 2018년 [Deep Learning-Based Multi-Omics Integration Robustly Predicts Survival in Liver Cancer](https://pubmed.ncbi.nlm.nih.gov/28982688/) 논문이 발표된 이후, multiomics 연구에서 ML 기술을 이용한 논문이 급격하게 늘어났다.
 # 4. Discussion
 ![](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/btad021f6.jpeg?Expires=1696301496&Signature=4mKcdi8ADjARTc0jzXDH9FQ1VH8VF7URMK4ZzJXdzlAhK-~7oWZ-osXgX0tbdhS9QWEf3~UBhDlu7EN5P8XW56xhFot2-gESjIBqvcC14d8hgs8Fun~sn1S4GkK8Y-KbXevop20uPMG20kzE4Sf3UPtmyM4ZNRzhhKTNgH1wte2Lt8VP89NSfftjallHiwgyhUq79nrUpCrUsyVaKdWa0iIc0jnwPngSHA0rHUqNvTAM~NblAghzEMhOxA0Y6v4-s0vnZwrAIcS69yBDZjaVBQ--w1YXsORw72GDrK5PrHQ5VDOMfN6jtQI8KQnD3DtYzA-x-D42cod2V6d3bpbBEQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)    
-*Shapes in datasets. Features ($P$) Samples ($n$)    
-(a) A dataset where $n$ ≫ $P$, the ideal ‘shape’ for many ML techniques.    
-(b) In multi-omics analyses, researchers face very wide datasets, where $n$ ≪ $P$.    
-(c) Feature selection and extraction are often used to reduce the number of features.    
-In feature selection, a subset of the original features is kept. In feature extraction, features are merged and transformed into a smaller number of new ones*
+*Shapes in datasets. Features (*$P$*) Samples (*$n$*)*    
+*(a) A dataset where* $n$ ≫ $P$*, the ideal ‘shape’ for many ML techniques.    
+(b) In multi-omics analyses, researchers face very wide datasets, where* $n$ ≪ $P$.    
+*(c) Feature selection and extraction are often used to reduce the number of features.    
+In feature selection, a subset of the original features is kept. In feature extraction, features are merged and transformed into a smaller number of new ones
 - 다시 말하지만 샘플($n$)의 수가 특징($P$)의 수보다 많은 상황이 ML에서 가장 이상적이다. 하지만 Multiomics data는 정반대의 성향을 지닌다.
 - 확인해야 하는 특징($P$)의 수가 엄청 많은 경우를 '높은 차원을 가진다'라고 표현하는데, 이때 발생하는 문제는 바로 희소(sparsity)이다. (혹은 sparse data라고 표현할 수도 있겠다.)
 - 이러한 sparse data를 가지고 실제로 ML 모델을 훈련시키려고 하면 잘 안된다는 단점이 있다. 각 샘플의 특징을 ML모델이 제대로 잡아내지 못한다. 이를 차원의 저주(curse of dimensionality)라고 부른다.
