@@ -17,9 +17,10 @@ https://academic.oup.com/bioinformatics/article/39/2/btad021/6986971
 # 1. What is multi-omic data in practice? 
 ## 1.1. Which types of -omics features made up the ‘data dimensions’? 
 <img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/btad021f2.jpeg?Expires=1696441666&Signature=HTyf33ZsKx-RGcUitMwyt4gakbJa8~Ep6MUmpPWF4R2mExn-WwNEaB8-caE0IgTJVx0LxC1TF7qNnc98qsYSDULj~8-W56jQ-xzsR0X2hjlQJdLq7iBGSfE8HVLKzKBRxOaSD5LshIll0HqK4wEJjbZRBrLTbOrbpUfs9GPjmKT64Px8qA-yAEpR5tnm7lJbWa~p~sx3lZ~MH99dTqnD0MvqR1GlJM7KIQ-o3cfW-B5QYFR5ax~ZtyakaLOltkslnQt7e~h53gF-EW6MEssmjhCeBxDOFB40GPgHnhPxmgHvcbuEcq6JD3-ut6STfCKuEwm~uFOlK2zptSxAAgW01w__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" width="800">    
-*(a) Number of uses of each -omics category in the reviewed papers.*    
-*(b) Number of -omics used per paper in the reviewed papers.*    
-*(c) The number of appearances -omics pairs across papers*     
+**(a) Number of uses of each -omics category in the reviewed papers.**    
+**(b) Number of -omics used per paper in the reviewed papers.**    
+**(c) The number of appearances -omics pairs across papers**     
+
 - 사람들은 Omics 분석인 만큼 주로 4개 정도의 서로 다른 데이터들을 함께 분석했다.
 - Transcriptomics를 포함하는 경우가 가장 많았고 그 뒤로 epigenomics, genomics 데이터를 쓰는 경우가 따랐다.
 - TCGA database의 등장으로 이런 경향이 두드러진다고 생각했으나, TCGA DB를 참조하지 않는 논문들도 비슷한 조합의 경향을 따랐다.
