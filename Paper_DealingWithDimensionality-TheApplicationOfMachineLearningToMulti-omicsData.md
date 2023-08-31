@@ -17,9 +17,11 @@ https://academic.oup.com/bioinformatics/article/39/2/btad021/6986971
 # 1. What is multi-omic data in practice? 
 ## 1.1. Which types of -omics features made up the ‘data dimensions’? 
 <img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/btad021f2.jpeg?Expires=1696441666&Signature=HTyf33ZsKx-RGcUitMwyt4gakbJa8~Ep6MUmpPWF4R2mExn-WwNEaB8-caE0IgTJVx0LxC1TF7qNnc98qsYSDULj~8-W56jQ-xzsR0X2hjlQJdLq7iBGSfE8HVLKzKBRxOaSD5LshIll0HqK4wEJjbZRBrLTbOrbpUfs9GPjmKT64Px8qA-yAEpR5tnm7lJbWa~p~sx3lZ~MH99dTqnD0MvqR1GlJM7KIQ-o3cfW-B5QYFR5ax~ZtyakaLOltkslnQt7e~h53gF-EW6MEssmjhCeBxDOFB40GPgHnhPxmgHvcbuEcq6JD3-ut6STfCKuEwm~uFOlK2zptSxAAgW01w__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" width="800">    
-<em>(a) Number of uses of each -omics category in the reviewed papers.    
-(b) Number of -omics used per paper in the reviewed papers.    
-(c) The number of appearances -omics pairs across papers     </em>
+
+*(a) Number of uses of each -omics category in the reviewed papers.*    
+*(b) Number of -omics used per paper in the reviewed papers.*    
+*(c) The number of appearances -omics pairs across papers.*     
+
 - 사람들은 Omics 분석인 만큼 주로 4개 정도의 서로 다른 데이터들을 함께 분석했다.
 - Transcriptomics를 포함하는 경우가 가장 많았고 그 뒤로 epigenomics, genomics 데이터를 쓰는 경우가 따랐다.
 - TCGA database의 등장으로 이런 경향이 두드러진다고 생각했으나, TCGA DB를 참조하지 않는 논문들도 비슷한 조합의 경향을 따랐다.
@@ -31,13 +33,16 @@ https://academic.oup.com/bioinformatics/article/39/2/btad021/6986971
 - TCGA DB의 등장, omics 분석의 어려움의 특성 상 온라인 토론이 활발하다는 점에서 자연스럽게 데이터 공유가 많아졌다.
 	- 이를 이점으로 삼아 다양한 ML 기술들이 테스트 되는 환경이 구축될 수 있었다.
 # 2. What analysis has been done on multi-omics data? 
-## 2.1. 	Which ML techniques were used?
+## 2.1. Which ML techniques were used?
 - Data integration은 비단 omics data 뿐만 아니라 여러 상황에서 데이터들을 합쳐야 할 때 필요하다.
 - Data integration을 위해서 machine learning이 사용되기도 하는데, bioinformatics와 관련없는 그룹들도 data integration을 수행한다.
 - 그렇다면 일반적인 데이터 사이언스 연구자 그룹과 multiomics data를 연구하는 그룹 사이에서 data integration을 목적으로 사용하는 machine learning 기술에 차이가 있을까?
-<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/btad021f4.jpeg?Expires=1696441617&Signature=zk231bVQ1rG39cc1An3JJlaNOm0iJgRd-0cYURpp7dfFNwRN4UrGoXMeSMkHDC4qBK8urijWQDE1MO1Q32SVs3QXL38QPqRqQybMQCmx6-WpCaeKjqqUxgdq6VMHYPvaFUHgBFNqU2ji21T3OkGYn8k8JFY-Xy0hHWrhUM35TdcAcDyIwwj7z3RM0iFTQyj8tmTC3gbRzn2ZfnMI07r5Dx-WaUx7tcznIuMH-BgsgYqnS~jymyuqu0l3RLyXEVz4AEBN~Sdnnp5k3asOiVAaQGkBihn5s75S6UuFgGar6B2rdz1OqYnrCP~0OeGSeR8D0BIrSGQB6wOUVg~OyEXBUA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" width="800">
-<em>(a) Number of ML techniques being used more than once in the reviewed papers. The publications on ‘machine learning AND multi-omics AND integration’ are plotted in green, while the publications on ‘machine learning AND integration’ are plotted in purple.    
-Number in the reviewed multi-omics ML papers of ML goals (b) and labels used for classification (c)    </em>
+<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/btad021f4.jpeg?Expires=1696441617&Signature=zk231bVQ1rG39cc1An3JJlaNOm0iJgRd-0cYURpp7dfFNwRN4UrGoXMeSMkHDC4qBK8urijWQDE1MO1Q32SVs3QXL38QPqRqQybMQCmx6-WpCaeKjqqUxgdq6VMHYPvaFUHgBFNqU2ji21T3OkGYn8k8JFY-Xy0hHWrhUM35TdcAcDyIwwj7z3RM0iFTQyj8tmTC3gbRzn2ZfnMI07r5Dx-WaUx7tcznIuMH-BgsgYqnS~jymyuqu0l3RLyXEVz4AEBN~Sdnnp5k3asOiVAaQGkBihn5s75S6UuFgGar6B2rdz1OqYnrCP~0OeGSeR8D0BIrSGQB6wOUVg~OyEXBUA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" width="800">    
+
+*(a) Number of ML techniques being used more than once in the reviewed papers.*
+*The publications on ‘machine learning AND multi-omics AND integration’ are plotted in green, while the publications on ‘machine learning AND integration’ are plotted in purple.*    
+*Number in the reviewed multi-omics ML papers of ML goals (b) and labels used for classification (c)*
+
 - Multiomics 그룹의 경우 Autoencoder, Cox PH 기술을 많이 이용했다.
 - 반면에 일반 ML 그룹은 Random forest와 SVM 기술 사용에서 큰 차이를 보였다.
 ## 2.2. What were the goals of the ML application?
@@ -48,15 +53,19 @@ Number in the reviewed multi-omics ML papers of ML goals (b) and labels used for
 - Classification의 경우 환자의 생존 예측이 제일 많았다.
 # 3. Can we explain trends using an analysis of the citation of papers since 2015?    
 ![](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/m_btad021f5.jpeg?Expires=1695325471&Signature=Q8ufkAm9rlkrhHe8ZIXi9qTNWHJWP93HEEQU-n0enRc~jJ624LLlODN6P3jkuU2YT4yoou~-migr~noHI9hFtAkXYORhMdQ7feJFTTVxyXcmh5QMVQZPyG-mnTLYngXg-LvNdGueGBD73Vpuxh5356vl9DAlje12M6ZR-pOHyyoxRKNhcIYeSebvJKAX9Swpk9-VXMZvRRkuYjWzwwJB-Tb6x3k~aZG2S~NBPtCUYWSHByZ7OQPloeXS1Cz5u7yu~5UUnTNmSoTcjafCV9xKJ4dbFKpsAcBrxyNjbWrBZIckQo3TtHUg4uIF0OBFWVEs2DE1HzXsDEiVenPVIc17Gg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)    
-<em>Number of citations per year, of papers published in different years    </em>
+
+*Number of citations per year, of papers published in different years*    
+
 - 2018년 [Deep Learning-Based Multi-Omics Integration Robustly Predicts Survival in Liver Cancer](https://pubmed.ncbi.nlm.nih.gov/28982688/) 논문이 발표된 이후, multiomics 연구에서 ML 기술을 이용한 논문이 급격하게 늘어났다.
 # 4. Discussion
 <img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/btad021f6.jpeg?Expires=1696301496&Signature=4mKcdi8ADjARTc0jzXDH9FQ1VH8VF7URMK4ZzJXdzlAhK-~7oWZ-osXgX0tbdhS9QWEf3~UBhDlu7EN5P8XW56xhFot2-gESjIBqvcC14d8hgs8Fun~sn1S4GkK8Y-KbXevop20uPMG20kzE4Sf3UPtmyM4ZNRzhhKTNgH1wte2Lt8VP89NSfftjallHiwgyhUq79nrUpCrUsyVaKdWa0iIc0jnwPngSHA0rHUqNvTAM~NblAghzEMhOxA0Y6v4-s0vnZwrAIcS69yBDZjaVBQ--w1YXsORw72GDrK5PrHQ5VDOMfN6jtQI8KQnD3DtYzA-x-D42cod2V6d3bpbBEQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" width="800">    
+
 *Shapes in datasets. Features (*$P$*) Samples (*$n$*)*    
-*(a) A dataset where* $n$ ≫ $P$*, the ideal ‘shape’ for many ML techniques.    
-(b) In multi-omics analyses, researchers face very wide datasets, where* $n$ ≪ $P$.    
-*(c) Feature selection and extraction are often used to reduce the number of features.    
-In feature selection, a subset of the original features is kept. In feature extraction, features are merged and transformed into a smaller number of new ones
+*(a) A dataset where* $n$ ≫ $P$*, the ideal ‘shape’ for many ML techniques.*    
+*(b) In multi-omics analyses, researchers face very wide datasets, where* $n$ ≪ $P$.    
+*(c) Feature selection and extraction are often used to reduce the number of features.*    
+*In feature selection, a subset of the original features is kept. In feature extraction, features are merged and transformed into a smaller number of new ones*
+
 - 다시 말하지만 샘플($n$)의 수가 feature($P$)의 수보다 많은 상황이 ML에서 가장 이상적이다. 하지만 Multiomics data는 정반대의 성향을 지닌다.
 - 확인해야 하는 feature($P$)의 수가 엄청 많은 경우를 '높은 차원을 가진다'라고 표현하는데, 이때 발생하는 문제는 바로 희소(sparsity)이다. (혹은 sparse data라고 표현할 수도 있겠다.)
 - 이러한 sparse data를 가지고 실제로 ML 모델을 훈련시키려고 하면 잘 안된다는 단점이 있다. 각 샘플의 feature을 ML모델이 제대로 잡아내지 못한다. 이를 차원의 저주(curse of dimensionality)라고 부른다.
