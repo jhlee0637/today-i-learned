@@ -109,7 +109,7 @@ https://academic.oup.com/bioinformatics/article/39/2/btad021/6986971
 		- 이러한 환경에서 얻은 데이터를 암 외의 multiomics 분석에 적용하는 것은 문제가 있을 수 밖에 없다.
 - 따라서 multiomics 분석에서 TCGA 데이터를 맹목적으로 활용하는 것은 지양해야할 것이다.
 	- 다만 여전히 TCGA가 다른 DB들의 특징이나 경향성을 나타낼 수 있다는 점도 상기해야할 것이다.    
-	  <img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/m_btad021f3.jpeg?Expires=1695325471&Signature=aNd-OCRNyN3BEK5KCwrPh2Tw0ZyRCc0~hfaIBtpkspZ~yo2A11UqjWm5UFBFfvU3OHckdoQyvZ5nEVmj3OpByWMpT7vt3jL6DeJgvc6dYSKcaH37bNMUX4lox8rKtufzuaL2Zu~yN-RSOftov0zpmaclDRXyPlEFbprSuCNO9sDo7e-W01apuAvTDZHNbeCsbCaTMYYCGm12S6JlVMEaWL~WBem4VsWgFidiZ52hWiCzpMKnaygXRal7KBzO4XKy4ntHi7zE64aP62RF3EWTB2pzqsSNgFxPpHTO~q~FFcyuV-9OtI5y3vGJuQoAfzdtDPb~Uf0nU1tGTBZ6wXuTTQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" width=400>    
+	  <img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/m_btad021f3.jpeg?Expires=1695325471&Signature=aNd-OCRNyN3BEK5KCwrPh2Tw0ZyRCc0~hfaIBtpkspZ~yo2A11UqjWm5UFBFfvU3OHckdoQyvZ5nEVmj3OpByWMpT7vt3jL6DeJgvc6dYSKcaH37bNMUX4lox8rKtufzuaL2Zu~yN-RSOftov0zpmaclDRXyPlEFbprSuCNO9sDo7e-W01apuAvTDZHNbeCsbCaTMYYCGm12S6JlVMEaWL~WBem4VsWgFidiZ52hWiCzpMKnaygXRal7KBzO4XKy4ntHi7zE64aP62RF3EWTB2pzqsSNgFxPpHTO~q~FFcyuV-9OtI5y3vGJuQoAfzdtDPb~Uf0nU1tGTBZ6wXuTTQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">    
 - multiomics 분석에서 샘플 수에 대해서 더 얘기하자면, 샘플 수가 무조건 많다고 분석에 활용이 가능한 것도 아니다.
 	- omic 데이터를 모아놓고 봤더니 overlapping되는 부분이 없어서 다 활용하지 못하는 경우도 있다.
 	- 실제로 [2018년 논문](https://www.frontiersin.org/articles/10.3389/fgene.2018.00477/full)에서는 copy number alteration과 gene expression 데이터에 대한 407개의 샘플을 모았으나, 두 항목이 모두 조사된 샘플을 190개 밖에 없어서 190개만 활용해서 분석한 경우가 있다.
@@ -118,3 +118,18 @@ https://academic.oup.com/bioinformatics/article/39/2/btad021/6986971
 - 다른 기술들은 classification, clustering, regression, inferring networks와 같은 용도의 기술들이었다.
 ## 4.6 New ML developments of potential use in multi-omics
 - 2017~2018년도 이후로 ML 기술에서 여러 발전이 있었지만 이에 대한 multiomics 분석에 적용은 아직 많이 진척되지 않았다.
+	- ML기술의 발전으로 말하자면 1) 인과관계에 대한 연구 2) 그래프 기반의 모델 3) 트랜스포머가 있었다.
+- 인과관계에 대한 연구는 '인과관계에 대한 가설정립'->'데이터를 통한 가설 확인'과 같은 방식으로 진행된다.
+	- 생물학의 경우 DNA-RNA-단백질로 구성된 센트럴도그마 시스템이 있는데, 이 요소들의 인과관계를 연구하기 위해 한꺼번에 multiomics로 분석한 사례가 있었다.
+	- 시스템 내에 존재하는 인과관계에 대한 가설을 정립할 때는 구조적인 가정 뿐 아니라 분포에 대한 가정으로도 가능하다(LiNGAM, CAM)
+	- 그러나 인과관계에 대한 연구는 일반적인 ML모델 훈련보다 훨씬 많은 샘플을 요구하기 때문에 multiomics 연구가 많이 이루어지지는 않는다.
+- 그래프 기반의 모델, 그래프신경망은 딥러닝 접근방식 중 하나이다.
+	- 특히 그래프 합성곱(convolutional) 네트워크가 유망하다.
+	- 합성곱 신경망은 합성곱 레이어를 쌓기 때문에, input으로 주어진 그래프에서 주요한 feature를 잘 배울 수 있고, 그 결과 예측, 분류와 같은 작업을 효과적으로 수행한다.
+	- 실제로 multiomics연구에서도 합성곱 신경망은 활용되고 있다.
+- 트랜스포머는 딥러닝 모델 중 하나다.
+	- 트랜스포머 딥러닝 모델은 합성곱이나 fully connected layer 대신 attention mechanism을 활용한다.
+	- 이 attention mechanism의 강력한 성능 때문에 ML 연구에서도 자연어(NLP)분야에서 많이 사용되고 있다.
+	- 트랜스포머 모델은 생물학에서도 잘 사용되는데 AlphaFold에서 사용된 것으로 유명하다.
+	- 생물학에서 이용된 또 다른 예시로 sequence 분석을 위해 개발 트랜스포머 모델인 [Big Bird 모델](https://proceedings.neurips.cc/paper/2020/hash/c8512d142a2d849725f31a9a7a361ab9-Abstract.html)이 있다.
+	- 트랜스포머 모델을 사전에 잘 훈련 시킨다면, multiomics 연구에서 마주하게 되는 샘플 수가 적은 문제를 해결하는데 도움을 줄 수도 있다.
