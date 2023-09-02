@@ -109,7 +109,7 @@ https://academic.oup.com/bioinformatics/article/39/2/btad021/6986971
 		- 이러한 환경에서 얻은 데이터를 암 외의 multiomics 분석에 적용하는 것은 문제가 있을 수 밖에 없다.
 - 따라서 multiomics 분석에서 TCGA 데이터를 맹목적으로 활용하는 것은 지양해야할 것이다.
 	- 다만 여전히 TCGA가 다른 DB들의 특징이나 경향성을 나타낼 수 있다는 점도 상기해야할 것이다.    
-	<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/m_btad021f3.jpeg?Expires=1695325471&Signature=aNd-OCRNyN3BEK5KCwrPh2Tw0ZyRCc0~hfaIBtpkspZ~yo2A11UqjWm5UFBFfvU3OHckdoQyvZ5nEVmj3OpByWMpT7vt3jL6DeJgvc6dYSKcaH37bNMUX4lox8rKtufzuaL2Zu~yN-RSOftov0zpmaclDRXyPlEFbprSuCNO9sDo7e-W01apuAvTDZHNbeCsbCaTMYYCGm12S6JlVMEaWL~WBem4VsWgFidiZ52hWiCzpMKnaygXRal7KBzO4XKy4ntHi7zE64aP62RF3EWTB2pzqsSNgFxPpHTO~q~FFcyuV-9OtI5y3vGJuQoAfzdtDPb~Uf0nU1tGTBZ6wXuTTQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">    
+<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/m_btad021f3.jpeg?Expires=1695325471&Signature=aNd-OCRNyN3BEK5KCwrPh2Tw0ZyRCc0~hfaIBtpkspZ~yo2A11UqjWm5UFBFfvU3OHckdoQyvZ5nEVmj3OpByWMpT7vt3jL6DeJgvc6dYSKcaH37bNMUX4lox8rKtufzuaL2Zu~yN-RSOftov0zpmaclDRXyPlEFbprSuCNO9sDo7e-W01apuAvTDZHNbeCsbCaTMYYCGm12S6JlVMEaWL~WBem4VsWgFidiZ52hWiCzpMKnaygXRal7KBzO4XKy4ntHi7zE64aP62RF3EWTB2pzqsSNgFxPpHTO~q~FFcyuV-9OtI5y3vGJuQoAfzdtDPb~Uf0nU1tGTBZ6wXuTTQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">    
 - multiomics 분석에서 샘플 수에 대해서 더 얘기하자면, 샘플 수가 무조건 많다고 분석에 활용이 가능한 것도 아니다.
 	- omic 데이터를 모아놓고 봤더니 overlapping되는 부분이 없어서 다 활용하지 못하는 경우도 있다.
 	- 실제로 [2018년 논문](https://www.frontiersin.org/articles/10.3389/fgene.2018.00477/full)에서는 copy number alteration과 gene expression 데이터에 대한 407개의 샘플을 모았으나, 두 항목이 모두 조사된 샘플을 190개 밖에 없어서 190개만 활용해서 분석한 경우가 있다.
