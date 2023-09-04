@@ -6,6 +6,7 @@
 	- late
 	- hierarchical
 <img src="https://ars.els-cdn.com/content/image/1-s2.0-S2001037021002683-ga1_lrg.jpg" width=800>
+
 # 1. introduction
 ### 왜 multi-omics 연구가 필요할까?
 - 맞춤의학, 정밀의료의 부상
