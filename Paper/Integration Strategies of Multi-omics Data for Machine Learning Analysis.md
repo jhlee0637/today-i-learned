@@ -54,7 +54,7 @@
 - 차원축소를 위한 방법은 크게 두 가지가 있다:
 	- Feature selection
 	- Redundant varaibles and feature extraction
-### 3.1.1. [[Feature Selection]](FS)
+### 3.1.1. [[Feature Selection]] (FS) 
 - Feature를 줄이는 작업
 - 그 결과 데이터의 복잡도, noise가 줄어들어서 데이터가 깔끔해진다.
 - 데이터가 깔끔해지니까, ML 모델이 overfitting될 위험도 적어진다.
