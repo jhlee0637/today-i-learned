@@ -1,5 +1,5 @@
 [Picard M, Scott-Boyer MP, Bodein A, Périn O, Droit A. Integration strategies of multi-omics data for machine learning analysis. Comput Struct Biotechnol J. 2021 Jun 22;19:3735-3746. doi: 10.1016/j.csbj.2021.06.030. PMID: 34285775; PMCID: PMC8258788.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8258788/)
-- 2021년 기준으로 mult-omics data integration 방법을 5가지로 분류함
+- 2021년 기준으로 [[Multi-omics]] [[Data Integration]] 방법을 5가지로 분류함
 	- early
 	- mixed
 	- intermediate
@@ -28,7 +28,7 @@
 	- 또한 [Ritchie et al.(2015)](https://pubmed.ncbi.nlm.nih.gov/25582081/)의 분류방법에 따라 vertical integration(논문에서는 meta-dimensinal)을 concatenation-based, transformation-based, model-based로 나눠서 볼 것이다.
 # 2. Challenges
 - 생물학 데이터는 필연적으로 오류를 동반하고 있는데, 이렇게 깨끗하지 못한 여러 omics 데이터를 종합하여 특정한 패턴을 관찰한다는 것은 쉽지 않다.
-- 또한 multi-omics 연구의 특성상 적은 샘플에서 많은 feature를 관찰해야 하는데, 이는 machine learing에서 가장 이상적이지 못한 상황으로 차원의 저주(the curse of dimensionality)라고 불리운다.
+- 또한 multi-omics 연구의 특성상 적은 샘플에서 많은 feature를 관찰해야 하는데, 이는 machine learing에서 가장 이상적이지 못한 상황으로 차원의 저주([[Curse of The Dimensionality]])라고 불리운다.
 	- 이런 상황에서 ML을 통해 데이터를 훈련시키면 overfit된다.
 - 생물학 omics 데이터들이 각각 너무 성격이 다르다는 점도 하나의 문제이다.
 	- 유전자 발현 데이터의 경우 수만개의 variable이 있을 수 있지만, 대사물질 데이터는 기껏해서 몇천일 수가 있다.
@@ -54,7 +54,7 @@
 - 차원축소를 위한 방법은 크게 두 가지가 있다:
 	- Feature selection
 	- Redundant varaibles and feature extraction
-### 3.1.1. Feature Selection(FS)
+### 3.1.1. [[Feature Selection]](FS)
 - Feature를 줄이는 작업
 - 그 결과 데이터의 복잡도, noise가 줄어들어서 데이터가 깔끔해진다.
 - 데이터가 깔끔해지니까, ML 모델이 overfitting될 위험도 적어진다.
@@ -73,15 +73,17 @@
 - **ReliefF** 같이 distance 방법을 사용하거나,
 - **mRMR** 같이 information gain 방법을 사용함
 ### Wrapper-based Feature Selection
-- 서로 다른 feature 그룹을 사용하여 반복적으로 ML 모델을 학습시킨다.
-- 이를 통해 모델의 전체 품질을 향상시키는 특성들을 선택한다.
+- ML 모델을 활용하여 서로 다른 feature 그룹을 학습시키고 평가한다.
+- 가장 성능이 좋았던 feature 그룹만 선택한다.
 - Recursive Feature Selection이 한 가지 예시이다.
-	- 먼저 전체 variable을 대상으로 모델을 학습시킨다.
-	- 그 다음 모델 퍼포먼스에 기여도가 떨어지는 variable을 차례대로 제거해간다.
-	- 어느 ML 모델에나 적용 가능하다는 장점이 있지만, 데이터셋이 크다면 컴퓨터 성능에 따라 시간이 오래 걸린다는 단점이 있다.
+	- 먼저 전체 feauture를 대상으로 모델을 학습시킨다.
+	- 그 다음 모델 퍼포먼스에 기여도가 떨어지는 feature를 차례대로 제거해간다.
+- 이 방법은 어느 ML 모델에서든 활용 가능하다는 장점이 있다.
+- 그러나 반복적으로 ML 모델을 훈련시켜야 하기 때문에, 데이터셋이 크다면 컴퓨터 성능에 따라 시간이 오래 걸린다는 단점이 있다.
 ### Embedded Feature Selection
 - Classifier 모델 안에 feature selection 알고리즘이 넣어져있는 경우
 - Tree-based feature selection과 regularization 방법이 있다.
 	- Regularization 방법은 loss function과 penalization funtion을 결합한 방법이다.
-		- Loss funtion은 모델이 주어진 데이터에 얼마나 잘 맞는지 확인하는 함수다
-		- Penalization funtion은 복잡도(complexity)에 대하여 페널티를 부가하는 방식으로 feature 수를 적은 쪽으로 유도한
+		- Loss funtion은 모델이 주어진 데이터에 얼마나 잘 맞는지 확인하는 함수다.
+		- Penalization funtion은 복잡도(complexity)에 대하여 페널티를 부가하는 방식으로 feature 수를 적은 쪽으로 유도한다.
+- Embedded Feature Selection 모델은 Wrapper-based Feature Selection과 마찬가지로 ML모델과 함께 사용되지만, 컴퓨터 자원을 덜 소비하기 때문에 컴퓨터 성능에 덜 의존적이라는 장점이 있다.
