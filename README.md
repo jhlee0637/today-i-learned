@@ -1,46 +1,48 @@
 # 2023
 ## September
-03/September/2023 [paper: Integration Strategies of Multi-omics Data for Machine Learning Analysis](./Paper_IntegrationStrategiesOfMulti-omicsDataForMachineLearningAnalysis.md) (ongoing)     
-02/September/2023 [paper: Integration Strategies of Multi-omics Data for Machine Learning Analysis](./Paper_IntegrationStrategiesOfMulti-omicsDataForMachineLearningAnalysis.md) (ongoing)
+21/September/2023 paper: Real-Time DNA Sequencing in the Antarctic Dry Valleys Using the Oxford Nanopore Sequencer (ongoing)
+20/September/2023 paper: Dark microbiome and extremely low organics in Atacama fossil delta unveil Mars life detection limits (ongoing)
+03/September/2023 paper: Integration Strategies of Multi-omics Data for Machine Learning Analysis (ongoing)     
+02/September/2023 paper: Integration Strategies of Multi-omics Data for Machine Learning Analysis (ongoing)
 
 ## August
-31/August/2023 [paper: Dealing with dimensionality: the application of machine learning to multi-omics data](./Paper_DealingWithDimensionality-TheApplicationOfMachineLearningToMulti-omicsData.md)    
-30/August/2023 [paper: Dealing with dimensionality: the application of machine learning to multi-omics data](./Paper_DealingWithDimensionality-TheApplicationOfMachineLearningToMulti-omicsData.md) (ongoing)  
-28/August/2023 [paper: Dealing with dimensionality: the application of machine learning to multi-omics data](./Paper_DealingWithDimensionality-TheApplicationOfMachineLearningToMulti-omicsData.md) (ongoing)  
-27/August/2023 [paper: Dealing with dimensionality: the application of machine learning to multi-omics data](./Paper_DealingWithDimensionality-TheApplicationOfMachineLearningToMulti-omicsData.md) (ongoing)    
-22/August/2023 [Single Cell Best Practice 1.Introduction](./SingleCellBestPractice-1.Introduction.md) (ongoing)    
-18/August/2023 [Punnett Squares](./IntGen_1.5_PunnettSquares.md)    
-16/August/2023 [Monohybrid](./IntGen_1.4_Monohybrid.md)    
-16/August/2023 [Monohybrid](./IntGen_1.4_Monohybrid.md) (ongoing)    
-09/August/2023 [Mendel's First Law and Meiosis](./IntGen_1.1-1.3_MendelsFirstLawMeiosis.md)    
-08/August/2023 [Somatic mutation vs. Germline mutation](./IntGen_6.2_SomaticMutVsGermlineMut.md)    
-07/August/2023 [Single Cell Best Practice  1.Introduction](./SingleCellBestPractice-1.Introduction.md) (ongoing)    
-05/August/2023 [AlphaFold1, AlphaFold2, and RoseTTAFold](./AlphaFold1,%20AlphaFold2,%20and%20RoseTTAFold.md)    
-04/August/2023 [Build Workflow from scratch - HaplotypeCaller](./Build%20Workflow%20from%20scratch%20-%20HaplotypeCaller.md)    
-03/August/2023 [Build Workflow from scratch - HaplotypeCaller](./Build%20Workflow%20from%20scratch%20-%20HaplotypeCaller.md) (ongoing)    
-02/August/2023 [Build Workflow from scratch - HaplotypeCaller](./Build%20Workflow%20from%20scratch%20-%20HaplotypeCaller.md) (ongoing)    
-01/August/2023 [Build Workflow from scratch - HaplotypeCaller](./Build%20Workflow%20from%20scratch%20-%20HaplotypeCaller.md) (ongoing)    
+31/August/2023 paper: Dealing with dimensionality: the application of machine learning to multi-omics data 
+30/August/2023 paper: Dealing with dimensionality: the application of machine learning to multi-omics data (ongoing)   
+28/August/2023 paper: Dealing with dimensionality: the application of machine learning to multi-omics data (ongoing)  
+27/August/2023 paper: Dealing with dimensionality: the application of machine learning to multi-omics data (ongoing)    
+22/August/2023 Single Cell Best Practice 1.Introduction (ongoing)    
+18/August/2023 Punnett Squares  
+16/August/2023 Monohybrid  
+16/August/2023 Monohybrid (ongoing)    
+09/August/2023 Mendel's First Law and Meiosis    
+08/August/2023 Somatic mutation vs. Germline mutation   
+07/August/2023 Single Cell Best Practice  1.Introduction (ongoing)    
+05/August/2023 AlphaFold1, AlphaFold2, and RoseTTAFold   
+04/August/2023 Build Workflow from scratch - HaplotypeCaller    
+03/August/2023 Build Workflow from scratch - HaplotypeCaller (ongoing)    
+02/August/2023 Build Workflow from scratch - HaplotypeCaller (ongoing)    
+01/August/2023 Build Workflow from scratch - HaplotypeCaller (ongoing)    
 ## July
-31/July/2023 [Build Workflow from scratch - HaplotypeCaller](./Build%20Workflow%20from%20scratch%20-%20HaplotypeCaller.md) (ongoing)    
-30/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 7](./edwith_LSnDP_Ch7.md)    
-21/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 7](./edwith_LSnDP_Ch7.md) (ongoing)    
-19/July/2023 [Prime number and Sieve of Eratosthenes](./Prime%20number%20and%20Sieve%20of%20Eratosthenes.md)    
-18/July/2023 [Greatest Common Divisor, Least Common Multiple, and Euclidean algorithm](./Greatest%20Common%20Divisor,%20Least%20Common%20Multiple,%20and%20Euclidean%20algorithm.md)    
-17/July/2023 [Building Docer & Google Cloud](./Building%20Docker%20in%20Google%20Cloud.md) (ongoing)    
-15/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 6](edwith_LSnDP_Ch6.md), [Why Bioinformaticians use Nextflow thesedays?](./Why%20Bioinformaticiansuse%20Nextflow%20Thesedays.md)    
+31/July/2023 Build Workflow from scratch - HaplotypeCaller (ongoing)    
+30/July/2023 Edwith - LinearStructureandDynamicProgramming - Chapter 7    
+21/July/2023 Edwith - LinearStructureandDynamicProgramming - Chapter 7 (ongoing)    
+19/July/2023 Prime number and Sieve of Eratosthenes   
+18/July/2023 Greatest Common Divisor, Least Common Multiple, and Euclidean algorithm 
+17/July/2023 Building Docer & Google Cloud (ongoing)    
+15/July/2023 Edwith - LinearStructureandDynamicProgramming - Chapter 6, Why Bioinformaticians use Nextflow thesedays?
 14/July/2023 Code modify from Edwith classes    
-12/JUly/2023 [Building Docer & Google Cloud](./Building%20Docker%20in%20Google%20Cloud.md) (ongoing)    
-11/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 6](edwith_LSnDP_Ch6.md) (ongoing)    
-10/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 5](edwith_LSnDP_Ch5.md), [Edwith - LinearStructureandDynamicProgramming - Chapter 6](edwith_LSnDP_Ch6.md) (ongoing)    
-08/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 4](edwith_LSnDP_Ch4.md)    
-07/July/2023 [Edwith - LinearStructureandDynamicProgramming - Chapter 4](edwith_LSnDP_Ch4.md) (ongoing)    
-06/July/2023 [p-value(유의확률)](./p-value(%EC%9C%A0%EC%9D%98%ED%99%95%EB%A5%A0).md)    
-05/July/2023 [p-value(유의확률)](./p-value(%EC%9C%A0%EC%9D%98%ED%99%95%EB%A5%A0).md) (ongoing)    
-04/July/2023 Reviewing [Edwith - LinearStructureandDynamicProgramming - Chapter 3](edwith_LSnDP_Ch3.md)     
-03/July/2023 Reviewing [Edwith - LinearStructureandDynamicProgramming - Chapter 3](edwith_LSnDP_Ch3.md) (ongoing)    
-02/July/2023 Reviewing [Edwith - LinearStructureandDynamicProgramming - Chapter 2](edwith_LSnDP_Ch2.md)     
+12/JUly/2023 Building Docer & Google Cloud(ongoing)    
+11/July/2023 Edwith - LinearStructureandDynamicProgramming - Chapter 6(ongoing)    
+10/July/2023 Edwith - LinearStructureandDynamicProgramming - Chapter 5, Edwith - LinearStructureandDynamicProgramming - Chapter 6 (ongoing)    
+08/July/2023 Edwith - LinearStructureandDynamicProgramming - Chapter 4   
+07/July/2023 Edwith - LinearStructureandDynamicProgramming - Chapter 4 (ongoing)    
+06/July/2023 p-value(유의확률)   
+05/July/2023 p-value(유의확률) (ongoing)    
+04/July/2023 Reviewing Edwith - LinearStructureandDynamicProgramming - Chapter 3    
+03/July/2023 Reviewing Edwith - LinearStructureandDynamicProgramming - Chapter 3 (ongoing)    
+02/July/2023 Reviewing Edwith - LinearStructureandDynamicProgramming - Chapter 2    
 01/July/2023 Code modify from Edwith classes    
 ## June
-30/June/2023 Reviewing [Edwith - LinearStructureandDynamicProgrammng - Chapter 2](edwith_LSnDP_Ch2.md) (ongoing)    
-29/June/2023 [Underfitting and Overfitting](./Underfitting%20and%20Overfitting.md)    
-28/June/2023 Reviewing [Edwith - LinearStructureandDynamicProgrammng - Chapter 1](edwith_LSnDP_Ch1.md)
+30/June/2023 Reviewing Edwith - LinearStructureandDynamicProgrammng - Chapter 2 (ongoing)    
+29/June/2023 Underfitting and Overfitting
+28/June/2023 Reviewing Edwith - LinearStructureandDynamicProgrammng - Chapter 1
