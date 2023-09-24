@@ -1,10 +1,9 @@
 # 2023
 ## September
-21/September/2023 paper: Real-Time DNA Sequencing in the Antarctic Dry Valleys Using the Oxford Nanopore Sequencer (ongoing)
-20/September/2023 paper: Dark microbiome and extremely low organics in Atacama fossil delta unveil Mars life detection limits (ongoing)
-03/September/2023 paper: Integration Strategies of Multi-omics Data for Machine Learning Analysis (ongoing)     
-02/September/2023 paper: Integration Strategies of Multi-omics Data for Machine Learning Analysis (ongoing)
-
+21/September/2023 paper: Real-Time DNA Sequencing in the Antarctic Dry Valleys Using the Oxford Nanopore Sequencer (ongoing)    
+20/September/2023 paper: Dark microbiome and extremely low organics in Atacama fossil delta unveil Mars life detection limits (ongoing)    
+03/September/2023 paper: Integration Strategies of Multi-omics Data for Machine Learning Analysis (ongoing)    
+02/September/2023 paper: Integration Strategies of Multi-omics Data for Machine Learning Analysis (ongoing)    
 ## August
 31/August/2023 paper: Dealing with dimensionality: the application of machine learning to multi-omics data 
 30/August/2023 paper: Dealing with dimensionality: the application of machine learning to multi-omics data (ongoing)   
