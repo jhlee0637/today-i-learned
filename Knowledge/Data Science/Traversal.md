@@ -22,36 +22,38 @@
 
 - **다시금 말하지만 DFS에서 중요한 것은 '가장 바닥이 어디인지', '이 tree구조의 깊이가 얼마나 되는지' 빨리 파악하는 것에 초점을 둔다.**
 - 위의 그림에서 가장 왼쪽 끝 바닥의 node인 4의 위치가 항상 앞쪽에 나열된다는 점에 주목하자.
-<details>
-<summary>DFS를 이용한 Inorder Traversal, Preorder Traversal, Postorder Traversal의 구현</summary>
+### DFS를 이용한 Inorder Traversal, Preorder Traversal, Postorder Traversal의 구현
 ```python
-# Python3 program to for tree traversals
- 
- 
-# A class that represents an individual node in a
-# Binary Tree
-class Node:
-    def __init__(self, key):
-        self.left = None
-        self.right = None
-        self.val = key
- 
- 
-# A function to do inorder tree traversal
+# Binary Search Tree(BST) Structure
+
+# 0. Build BST node
+Class Node:
+	def __init__(self, key):
+		self.left = None # child 1
+		self. right = None # child 2
+		self.val = key
+
+# 1. Inorder Traversal
 def printInorder(root):
- 
-    if root:
- 
-        # First recur on left child
-        printInorder(root.left)
- 
-        # Then print the data of node
-        print(root.val, end=" "),
- 
-        # Now recur on right child
-        printInorder(root.right)
- 
- 
+	if root:
+		printInorder(root.left) # Recursive Function. Keep go to left!
+		print(root.val, end=" ") # Come back to root
+		printInorder(root.right) # Go to right
+		
+# 2. Preorder Traversal
+def printPreorder(root):
+	if root:
+		print(root.val, end=" ") # Root First
+		printPreorder(root.left) # Recursive Function. Keep go to left!
+		printPreorder(root.right) # Now go to right
+
+# 3. Postorder Traversal
+def printPostorder(root):
+	if root:
+		printPostorder(root.left) # Recursive Function. Keep go to left!
+		printPostorder(root.right) # Go to right
+		print(root.val, end=" ") # Check the root as last
+		
 # Driver code
 if __name__ == "__main__":
     root = Node(1)
@@ -62,11 +64,14 @@ if __name__ == "__main__":
  
     # Function call
     print("Inorder traversal of binary tree is")
-    printInorder(root)
+    printInorder(root) # 42513
+    print("Preorder traversal of binary tree is")
+    printPreorder(root) # 12453
+    print("Postorder traversal of binary tree is")
+    printPostorder(root) # 45231
 ```
-</details>
-
 ## 2. BFS
+
 ## 3. Boundary Traversal
 ## 4. Diagonal Traversal
 
