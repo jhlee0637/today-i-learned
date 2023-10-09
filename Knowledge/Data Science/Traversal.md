@@ -30,7 +30,7 @@
 Class Node:
 	def __init__(self, key):
 		self.left = None # child 1
-		self. right = None # child 2
+		self.right = None # child 2
 		self.val = key
 
 # 1. Inorder Traversal
