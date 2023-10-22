@@ -16,7 +16,7 @@ https://academic.oup.com/bioinformatics/article/39/2/btad021/6986971
 	- 다른 연구자들의 방식들을 나열하기만 함
 # 1. What is multi-omic data in practice? 
 ## 1.1. Which types of -omics features made up the ‘data dimensions’? 
-<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/btad021f2.jpeg?Expires=1696441666&Signature=HTyf33ZsKx-RGcUitMwyt4gakbJa8~Ep6MUmpPWF4R2mExn-WwNEaB8-caE0IgTJVx0LxC1TF7qNnc98qsYSDULj~8-W56jQ-xzsR0X2hjlQJdLq7iBGSfE8HVLKzKBRxOaSD5LshIll0HqK4wEJjbZRBrLTbOrbpUfs9GPjmKT64Px8qA-yAEpR5tnm7lJbWa~p~sx3lZ~MH99dTqnD0MvqR1GlJM7KIQ-o3cfW-B5QYFR5ax~ZtyakaLOltkslnQt7e~h53gF-EW6MEssmjhCeBxDOFB40GPgHnhPxmgHvcbuEcq6JD3-ut6STfCKuEwm~uFOlK2zptSxAAgW01w__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" width="800">    
+<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/btad021f2.jpeg?Expires=1696441666&Signature=HTyf33ZsKx-RGcUitMwyt4gakbJa8~Ep6MUmpPWF4R2mExn-WwNEaB8-caE0IgTJVx0LxC1TF7qNnc98qsYSDULj~8-W56jQ-xzsR0X2hjlQJdLq7iBGSfE8HVLKzKBRxOaSD5LshIll0HqK4wEJjbZRBrLTbOrbpUfs9GPjmKT64Px8qA-yAEpR5tnm7lJbWa~p~sx3lZ~MH99dTqnD0MvqR1GlJM7KIQ-o3cfW-B5QYFR5ax~ZtyakaLOltkslnQt7e~h53gF-EW6MEssmjhCeBxDOFB40GPgHnhPxmgHvcbuEcq6JD3-ut6STfCKuEwm~uFOlK2zptSxAAgW01w__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" width="800">
 
 *(a) Number of uses of each -omics category in the reviewed papers.*    
 *(b) Number of -omics used per paper in the reviewed papers.*    
@@ -26,25 +26,26 @@ https://academic.oup.com/bioinformatics/article/39/2/btad021/6986971
 - Transcriptomics를 포함하는 경우가 가장 많았고 그 뒤로 epigenomics, genomics 데이터를 쓰는 경우가 따랐다.
 - TCGA database의 등장으로 이런 경향이 두드러진다고 생각했으나, TCGA DB를 참조하지 않는 논문들도 비슷한 조합의 경향을 따랐다.
 ## 1.2. How is the data structured: how many features versus samples?
-- 위에서 말했듯이 omic data의 경우 샘플마다 살펴봐야하는 특성의 개수가 샘플의 수 보다 훨씬 많다.
-- 각 논문들이 omics 분석엣 사용하는 특성의 수가 샘플의 수 보다 7~8배 정도 많았다.
-	- 중간값으로 따졌을 때 특성의 수가 33,415이고 샘플의 수가 447
-	- 평균값으로 따졌을 때 특성의 수가 73,996이 샘플의 수가 1767
-- TCGA DB의 등장, omics 분석의 어려움의 특성 상 온라인 토론이 활발하다는 점에서 자연스럽게 데이터 공유가 많아졌다.
+- 각 논문들이 omics 분석에 사용하는 feature 수가 샘플개수보다 7~8배 정도 많았다.
+	- 중간값으로 따졌을 때 특성 33,415 샘플 447
+	- 평균값으로 따졌을 때 특성 73,996 샘플 1767
+- TCGA DB의 등장, 온라인 기반의 연구 커뮤니티로 자연스럽게 데이터 공유가 증가
 	- 이를 이점으로 삼아 다양한 ML 기술들이 테스트 되는 환경이 구축될 수 있었다.
 # 2. What analysis has been done on multi-omics data? 
 ## 2.1. Which ML techniques were used?
-- Data integration은 비단 omics data 뿐만 아니라 여러 상황에서 데이터들을 합쳐야 할 때 필요하다.
-- Data integration을 위해서 machine learning이 사용되기도 하는데, bioinformatics와 관련없는 그룹들도 data integration을 수행한다.
-- 그렇다면 일반적인 데이터 사이언스 연구자 그룹과 multiomics data를 연구하는 그룹 사이에서 data integration을 목적으로 사용하는 machine learning 기술에 차이가 있을까?
+- Data integration
+- Data integration을 위해서 machine learning이 사용되기도 한다.
+- 일반 데이터 사이언스 연구 그룹들도 data integration을 수행한다.
+- 그렇다면
+	1) 일반적인 데이터 사이언스 연구자 그룹과 2) multiomics data를 연구하는 그룹 사이에서 **data integration을 목적으로 사용하는 machine learning 기술에 차이가 있을까?**
 <img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/btad021f4.jpeg?Expires=1696441617&Signature=zk231bVQ1rG39cc1An3JJlaNOm0iJgRd-0cYURpp7dfFNwRN4UrGoXMeSMkHDC4qBK8urijWQDE1MO1Q32SVs3QXL38QPqRqQybMQCmx6-WpCaeKjqqUxgdq6VMHYPvaFUHgBFNqU2ji21T3OkGYn8k8JFY-Xy0hHWrhUM35TdcAcDyIwwj7z3RM0iFTQyj8tmTC3gbRzn2ZfnMI07r5Dx-WaUx7tcznIuMH-BgsgYqnS~jymyuqu0l3RLyXEVz4AEBN~Sdnnp5k3asOiVAaQGkBihn5s75S6UuFgGar6B2rdz1OqYnrCP~0OeGSeR8D0BIrSGQB6wOUVg~OyEXBUA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" width="800">    
 
 *(a) Number of ML techniques being used more than once in the reviewed papers.*
 *The publications on ‘machine learning AND multi-omics AND integration’ are plotted in green, while the publications on ‘machine learning AND integration’ are plotted in purple.*    
 *Number in the reviewed multi-omics ML papers of ML goals (b) and labels used for classification (c)*
 
-- Multiomics 그룹의 경우 Autoencoder, Cox PH 기술을 많이 이용했다.
-- 반면에 일반 ML 그룹은 Random forest와 SVM 기술 사용에서 큰 차이를 보였다.
+- Multiomics 그룹의 경우 *Autoencoder*, *Cox PH* 기술을 많이 이용했다.
+- 반면에 일반 ML 그룹은 *Random forest*와 *SVM* 기술 사용에서 큰 차이를 보였다.
 ## 2.2. What were the goals of the ML application?
 - Multiomics 그룹이 ML을 이용한 주 목적은 첫번째는 classification, 두번째는 dimensionality reduction이었다.
 - Classfication을 통하여 질병을 subtype별로 분리하기, 환자의 생존 예측을 라벨(5년이상, 5년이하) 별로 분리하는 경우에 쓰였다.
@@ -52,7 +53,7 @@ https://academic.oup.com/bioinformatics/article/39/2/btad021/6986971
 ## 2.3 What were the targets/labels of classification tasks?
 - Classification의 경우 환자의 생존 예측이 제일 많았다.
 # 3. Can we explain trends using an analysis of the citation of papers since 2015?    
-![](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/m_btad021f5.jpeg?Expires=1695325471&Signature=Q8ufkAm9rlkrhHe8ZIXi9qTNWHJWP93HEEQU-n0enRc~jJ624LLlODN6P3jkuU2YT4yoou~-migr~noHI9hFtAkXYORhMdQ7feJFTTVxyXcmh5QMVQZPyG-mnTLYngXg-LvNdGueGBD73Vpuxh5356vl9DAlje12M6ZR-pOHyyoxRKNhcIYeSebvJKAX9Swpk9-VXMZvRRkuYjWzwwJB-Tb6x3k~aZG2S~NBPtCUYWSHByZ7OQPloeXS1Cz5u7yu~5UUnTNmSoTcjafCV9xKJ4dbFKpsAcBrxyNjbWrBZIckQo3TtHUg4uIF0OBFWVEs2DE1HzXsDEiVenPVIc17Gg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)    
+<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/m_btad021f5.jpeg?Expires=1699505413&Signature=FmzC9xrJQs8bT6-aAk~WmUFIAgXVpm-2TuXqVityXhP~Yb56jXNMjNOtxfohlUeuM~hE3jmmcgTHI6JFQgcN78JN0pXyyeo7~QMACQhvF3iaKUt64R4aXd2ABl~XuEiuy0bptKFo9W1R~90ZmpGfJlX3a2xChYFd6THOHTJOYsNWNyTC3z4aVcK1JGP4ayBpRDAJxINpz5T0PcUtYLWthUD1nxsZ-N3RUwCzcwudvHpPCwK6JQWAXbrkia5A73OfktBicyc9SrcDtAolqpXh1WJf-kkes5UhBonfQS5Q~dJuQ4DifpPF3o1HXrzpUT4EEzN9jDMPESJruIthZEnM1Q__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">    
 
 *Number of citations per year, of papers published in different years*    
 
@@ -66,10 +67,15 @@ https://academic.oup.com/bioinformatics/article/39/2/btad021/6986971
 *(c) Feature selection and extraction are often used to reduce the number of features.*    
 *In feature selection, a subset of the original features is kept. In feature extraction, features are merged and transformed into a smaller number of new ones*
 
-- 다시 말하지만 샘플($n$)의 수가 feature($P$)의 수보다 많은 상황이 ML에서 가장 이상적이다. 하지만 Multiomics data는 정반대의 성향을 지닌다.
-- 확인해야 하는 feature($P$)의 수가 엄청 많은 경우를 '높은 차원을 가진다'라고 표현하는데, 이때 발생하는 문제는 바로 희소(sparsity)이다. (혹은 sparse data라고 표현할 수도 있겠다.)
-- 이러한 sparse data를 가지고 실제로 ML 모델을 훈련시키려고 하면 잘 안된다는 단점이 있다. 각 샘플의 feature을 ML모델이 제대로 잡아내지 못한다. 이를 차원의 저주(curse of dimensionality)라고 부른다.
-- 그렇기 때문에 ML 연구에서는 이러한 sprase data에 대하여 여러가지 전략을 시도하여 모델 훈련이 잘 되도록 유도한다.
+- 샘플($n$)의 수 > feature($P$)의 수 상황이 ML에서 가장 이상적이다.
+	- 하지만 Multiomics data는 정반대의 상황이 자주 발생한다.
+
+- 확인해야 하는 feature($P$)의 수가 엄청 많은 경우를 '높은 차원을 가진다'라고 표현한다.
+	- 이때 발생하는 문제는 바로 희소([[sparsity]])이다. (혹은 sparse data라고 표현할 수도 있겠다.)
+- Sparse data를 가지고 실제로 ML 모델을 훈련시키려고 하면 잘 안된다는 단점이 있다.
+	- 각 샘플의 feature을 ML모델이 제대로 잡아내지 못한다.
+	- 이를 차원의 저주([[Curse of The Dimensionality]]라고 부른다.
+- **그렇기 때문에 ML 연구에서는 이러한 sprase data에 대하여 여러가지 전략을 시도하여 모델 훈련이 잘 되도록 유도한다.**
 ## 4.1 Reducing the number of features (P)
 - Sparse data가 가진 차원의 저주 문제를 풀기 위한 시도 중 하나로는, feature($P$)의 수를 줄이려는 시도가 있다. (feature을 줄이는 것 만이 유일한 전략은 아니다.)
 - feature를 줄이는 방법에도 여러가지가 있는데...
@@ -83,7 +89,7 @@ https://academic.oup.com/bioinformatics/article/39/2/btad021/6986971
 	- 일반적으로는 유전자들 중에서도 활성빈도(activity level)이 낮은 유전자를 걸러내는 식으로 feature selection이 이루어진다.
 	- 후성유전체학 데이터의 경우에는 관련성 높은 유전자가 인접한 지역이나 여러 메틸화부위를 둘러싼 지역만 따로 고려하는 식으로 feature selection이 이루어진다.
 - Omics 분석에서 Cox PH 모델(생존율 분석을 위한 모델)과 feature selection을 함께 사용하는 경우가 많이 보였다.
-	- Cox PH 모델이란 선형회귀를 활용하여 특정 변수(약물, 유전자 등 수명에 영향을 끼칠 수 있는 것)에 의한 시간에 따른 생존율을 예측하는 모델이다.
+	- **Cox PH 모델이란 선형회귀를 활용하여 특정 변수(약물, 유전자 등 수명에 영향을 끼칠 수 있는 것)에 의한 시간에 따른 생존율을 예측하는 모델이다.**
 	- Cox PH 모델은 일반적인 ML 연구에서는 인기가 없지만 multiomics 분석에서 전체에서 두 번째로 가장 많이 사용될 정도로 인기가 많았다.
 		- 이는 TCGA database에서 생존율 데이터에 접근이 가능하다는 점과 multiomics data 분석에 feature selection이 필수불가결해지면서 채택빈도가 늘어난 것으로 보인다.
 	- Feature selection을 통해 나온 결과들을 비교할 수 있기 때문에, 어느 변수(feature)들이 생존율에 더 영향력이 있는지 판가름하기 좋다.
@@ -109,13 +115,12 @@ https://academic.oup.com/bioinformatics/article/39/2/btad021/6986971
 		- 이러한 환경에서 얻은 데이터를 암 외의 multiomics 분석에 적용하는 것은 문제가 있을 수 밖에 없다.
 - 따라서 multiomics 분석에서 TCGA 데이터를 맹목적으로 활용하는 것은 지양해야할 것이다.
 	- 다만 여전히 TCGA가 다른 DB들의 특징이나 경향성을 나타낼 수 있다는 점도 상기해야할 것이다.    
-<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/m_btad021f3.jpeg?Expires=1695325471&Signature=aNd-OCRNyN3BEK5KCwrPh2Tw0ZyRCc0~hfaIBtpkspZ~yo2A11UqjWm5UFBFfvU3OHckdoQyvZ5nEVmj3OpByWMpT7vt3jL6DeJgvc6dYSKcaH37bNMUX4lox8rKtufzuaL2Zu~yN-RSOftov0zpmaclDRXyPlEFbprSuCNO9sDo7e-W01apuAvTDZHNbeCsbCaTMYYCGm12S6JlVMEaWL~WBem4VsWgFidiZ52hWiCzpMKnaygXRal7KBzO4XKy4ntHi7zE64aP62RF3EWTB2pzqsSNgFxPpHTO~q~FFcyuV-9OtI5y3vGJuQoAfzdtDPb~Uf0nU1tGTBZ6wXuTTQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">
-
-- multiomics 분석에서 샘플 수에 대해서 더 얘기하자면, 샘플 수가 무조건 많다고 분석에 활용이 가능한 것도 아니다.
-	- omic 데이터를 모아놓고 봤더니 overlapping되는 부분이 없어서 다 활용하지 못하는 경우도 있다.
+- multiomics 분석에서샘플 수가 많다고 항상 분석이 용이한 것은 아니다.
+	- omic 데이터에서 overlapping되는 부분이 없어서 다 활용하지 못하는 경우도 있다.
 	- 실제로 [2018년 논문](https://www.frontiersin.org/articles/10.3389/fgene.2018.00477/full)에서는 copy number alteration과 gene expression 데이터에 대한 407개의 샘플을 모았으나, 두 항목이 모두 조사된 샘플을 190개 밖에 없어서 190개만 활용해서 분석한 경우가 있다.
 ## 4.5 After reshaping the data
-- Autoencoder, Cox PH는 ML을 활용하여 multiomics 분석을 하는 bioinformatics 그룹들이 가장 많이 쓴 기술이었으며, 둘 다 feature extraction을 통한 차원축소를 통해 모델의 정확성을 높이고자 했다.
+- Autoencoder, Cox PH는 ML을 활용하여 multiomics 분석을 하는 bioinformatics 그룹들이 가장 많이 쓴 기술이었다.
+	- 둘 다 feature extraction을 통한 차원축소를 통해 모델의 정확성을 높이고자 했다.
 - 다른 기술들은 classification, clustering, regression, inferring networks와 같은 용도의 기술들이었다.
 ## 4.6 New ML developments of potential use in multi-omics
 - 2017~2018년도 이후로 ML 기술에서 여러 발전이 있었지만 이에 대한 multiomics 분석에 적용은 아직 많이 진척되지 않았다.
@@ -128,8 +133,8 @@ https://academic.oup.com/bioinformatics/article/39/2/btad021/6986971
 	- 특히 그래프 합성곱(convolutional) 네트워크가 유망하다.
 	- 합성곱 신경망은 합성곱 레이어를 쌓기 때문에, input으로 주어진 그래프에서 주요한 feature를 잘 배울 수 있고, 그 결과 예측, 분류와 같은 작업을 효과적으로 수행한다.
 	- 실제로 multiomics연구에서도 합성곱 신경망은 활용되고 있다.
-- 트랜스포머는 딥러닝 모델 중 하나다.
-	- 트랜스포머 딥러닝 모델은 합성곱이나 fully connected layer 대신 attention mechanism을 활용한다.
+- [[Transformer]]는 딥러닝 모델 중 하나다.
+	- Transformer는 딥러닝 모델은 합성곱이나 fully connected layer 대신 attention mechanism을 활용한다.
 	- 이 attention mechanism의 강력한 성능 때문에 ML 연구에서도 자연어(NLP)분야에서 많이 사용되고 있다.
 	- 트랜스포머 모델은 생물학에서도 잘 사용되는데 AlphaFold에서 사용된 것으로 유명하다.
 	- 생물학에서 이용된 또 다른 예시로 sequence 분석을 위해 개발 트랜스포머 모델인 [Big Bird 모델](https://proceedings.neurips.cc/paper/2020/hash/c8512d142a2d849725f31a9a7a361ab9-Abstract.html)이 있다.
