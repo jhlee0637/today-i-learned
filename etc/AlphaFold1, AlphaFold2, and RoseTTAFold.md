@@ -10,7 +10,7 @@
 [알파폴드2 모델 분석](https://taehojo.github.io/alphafold/alphafold2.html)
 [알파폴드 2 작동원리 / alphafodl2](https://blog.naver.com/economic_moat/222506288911)
 [Alphafold2 논문 리뷰2 - 입력부분](https://happyhaelee.tistory.com/98)
-[Alphafold2 논문리뷰3[Evoformer -  MSA representation]](https://happyhaelee.tistory.com/97)
+[Alphafold2 논문리뷰3 Evoformer -  MSA representation](https://happyhaelee.tistory.com/97)
 - Evoformer에 넣기 위한 두 개의 representation 준비
 	- 알파폴드1과 유사하게 MSA representation을 먼저 준비함
 	- 거기에 DB에서 검색된 query sequence와 유사한 sequence를 가진 단백질 template를 활용, template 구조를 pair representation으로 통합하여 준비함
