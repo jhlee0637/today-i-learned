@@ -12,7 +12,7 @@
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FuZHQk%2FbtqGh5trbmp%2FShGf5Y6wvONJzRlFBsDC6K%2Fimg.png">
 
 - 학습모델이 주어진 데이터의 정보량을 평가하고, 라벨링이 필요하다고 판단되는 경우에만 인간에게 전달한다.
-- 정보량을 평가할 때는 [[Query Strategy]]를 사용한다. 라벨링이 필요하다고 판단되는 경우는 query하고 아닌 것은 버린다.
+- 정보량을 평가할 때는 [[today-i-learned/Query Strategy]]를 사용한다. 라벨링이 필요하다고 판단되는 경우는 query하고 아닌 것은 버린다.
 
 ### 3. Pool-Based Sampling
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbYge1J%2FbtqGishA6lv%2FUlUodeq23UIJYd1WNNnqWK%2Fimg.png">

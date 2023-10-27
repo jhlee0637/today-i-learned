@@ -5,7 +5,7 @@
 |Lecture name|study status | 
 |:-|:-:|
 |[어른들을 위한 기초 수학: 초등부터 고등까지](https://www.edwith.org/sutudy/home)|complete|
-|[어른들을 위한 기초 수학: 미적분 삼각함수](https://www.edwith.org/sutudy2/home)| - |
+|[어른들을 위한 기초 수학: 미적분 삼각함수](https://www.edwith.org/sutudy2/home)| ongoing |
 |[어른들을 위한 기초 수학: 미적분 벡터](https://www.edwith.org/sutudy03/home)| - |
 |[부스트코스: 인공지능을 위한 선형대수](https://www.boostcourse.org/ai251/joinLectures/195088)| - |
 |[칸아카데미: 모두를 위한 선형대수학](https://www.boostcourse.org/ai151/home)| - |
