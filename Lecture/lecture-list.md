@@ -1,6 +1,4 @@
-참고
-- https://djccnt15.github.io/researchlog/roadmap/
-- https://i.am.ai/roadmap/#machine-learning-roadmap
+# Math, Statistics, Data Science, AI, Machine Learning, Deep Learning
 
 |Lecture name|study status | 
 |:-|:-:|
@@ -26,7 +24,21 @@
 |[Andre Ng YouTube: Deep learning III](https://www.boostcourse.org/ai217/home)| - |
 |[Andre Ng YouTube: Deep learning IV](https://www.boostcourse.org/ai218/home)| - |
 |[edwith: Bayesian Deep Learning](https://www.edwith.org/bayesiandeeplearning/home)| - |
+
+## 참고
+- https://djccnt15.github.io/researchlog/roadmap/
+- https://i.am.ai/roadmap/#machine-learning-roadmap
+---
+# Bioinformatics, Microbiology
+|Lecture name|status|
+|:-|:-:|
+|[SNU: Prokaryotic Taxonomy and Microbiome](https://help.ezbiocloud.net/course-prokaryotic-taxonomy-microbiome/)| - |
+|[udemy: Machine Learning, Data Science and Deep Learning with Python](https://www.udemy.com/data-science-and-machine-learning-with-python-hands-on/)| - |
+|[Dan Knights' Microbiome Discovery](https://www.youtube.com/playlist?list=PLOPiWVjg6aTzsA53N19YqJQeZpSCH9QPc)| - |
+|[Stonehill: An Introductory Undergraduate course in Bioinformatics](https://rsh249.github.io/bioinformatics/)| - |
 |[MIT: 6.047/6.878 Machine Learning for Genomics Fall 2020](https://youtube.com/playlist?list=PLypiXJdtIca6dEYlNoZJwBaz__CdsaoKJ&si=Fmb5rexc6L9Ra376)| - |
 |[MIT: 6.874 Computational Systems Biology: Deep Learning in the Life Sciences Spring 2021](https://mit6874.github.io/)| - |
 
-
+## 참고
+- https://help.ezbiocloud.net/snu_leb_intern/
+- https://github.com/ossu/bioinformatics
