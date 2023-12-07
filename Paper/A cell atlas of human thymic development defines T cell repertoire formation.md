@@ -1,6 +1,6 @@
 [Park JE, Botting RA, Domínguez Conde C, Popescu DM, Lavaert M, Kunz DJ, Goh I, Stephenson E, Ragazzini R, Tuck E, Wilbrey-Clark A, Roberts K, Kedlian VR, Ferdinand JR, He X, Webb S, Maunder D, Vandamme N, Mahbubani KT, Polanski K, Mamanova L, Bolt L, Crossland D, de Rita F, Fuller A, Filby A, Reynolds G, Dixon D, Saeb-Parsy K, Lisgo S, Henderson D, Vento-Tormo R, Bayraktar OA, Barker RA, Meyer KB, Saeys Y, Bonfanti P, Behjati S, Clatworthy MR, Taghon T, Haniffa M, Teichmann SA. A cell atlas of human thymic development defines T cell repertoire formation. Science. 2020 Feb 21;367(6480):eaay3224. doi: 10.1126/science.aay3224. PMID: 32079746; PMCID: PMC7611066.](https://www.science.org/doi/10.1126/science.aay3224)
 # 사전지식
-### [[Thymus]]
+### [[today-i-learned/Knowledge/Biology/Thymus|Thymus]]
 
 ### [[Cell Atlas]]
 

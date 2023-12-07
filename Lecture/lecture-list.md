@@ -1,12 +1,12 @@
 # Math, Statistics, Data Science, AI, Machine Learning, Deep Learning
 
-|Lecture name|study status | 
+|Lecture name| status | 
 |:-|:-:|
 |[어른들을 위한 기초 수학: 초등부터 고등까지](https://www.edwith.org/sutudy/home)|complete|
 |[어른들을 위한 기초 수학: 미적분 삼각함수](https://www.edwith.org/sutudy2/home)| complete |
-|[어른들을 위한 기초 수학: 미적분 벡터](https://www.edwith.org/sutudy03/home)| ongoing |
-|[부스트코스: 인공지능을 위한 선형대수](https://www.boostcourse.org/ai251/joinLectures/195088)| - |
-|[칸아카데미: 모두를 위한 선형대수학](https://www.boostcourse.org/ai151/home)| - |
+|[어른들을 위한 기초 수학: 미적분 벡터](https://www.edwith.org/sutudy03/home)| complete |
+|[부스트코스: 인공지능을 위한 선형대수](https://www.boostcourse.org/ai251/joinLectures/195088)| ongoing |
+|[칸아카데미: 모두를 위한 선형대수학](https://www.boostcourse.org/ai151/home)| [complete](./Certifications/BoostCourse_Khan_LinearAlgebra.pdf) |
 |[KAIST: 데이터 구조 및 분석: Linear Structure and Dynamic Programming 2018](https://www.edwith.org/datastructure-2019s/home)|complete| 
 |[KAIST: 데이터 구조 및 분석: Non-Linear Structure, Optimization, and Algorithms 2018](https://www.edwith.org/datastructure-2019s2/home)|ongoing|
 |[MIT 데이터 사이언스 기초](https://www.boostcourse.org/ds201/home)| - |

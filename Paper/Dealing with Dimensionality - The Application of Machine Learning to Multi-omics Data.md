@@ -16,7 +16,7 @@ https://academic.oup.com/bioinformatics/article/39/2/btad021/6986971
 	- 다른 연구자들의 방식들을 나열하기만 함
 # 1. What is multi-omic data in practice? 
 ## 1.1. Which types of -omics features made up the ‘data dimensions’? 
-<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/btad021f2.jpeg?Expires=1696441666&Signature=HTyf33ZsKx-RGcUitMwyt4gakbJa8~Ep6MUmpPWF4R2mExn-WwNEaB8-caE0IgTJVx0LxC1TF7qNnc98qsYSDULj~8-W56jQ-xzsR0X2hjlQJdLq7iBGSfE8HVLKzKBRxOaSD5LshIll0HqK4wEJjbZRBrLTbOrbpUfs9GPjmKT64Px8qA-yAEpR5tnm7lJbWa~p~sx3lZ~MH99dTqnD0MvqR1GlJM7KIQ-o3cfW-B5QYFR5ax~ZtyakaLOltkslnQt7e~h53gF-EW6MEssmjhCeBxDOFB40GPgHnhPxmgHvcbuEcq6JD3-ut6STfCKuEwm~uFOlK2zptSxAAgW01w__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" width="800">
+<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/btad021f2.jpeg?Expires=1704667603&Signature=jq7O9vmzd0IHzODtgaiZDUdL6OnU1TWidAgLyBGa36gxnTVqVk0ytZgLHfYwYmUJpCjQ13J9hVZrEtlK4ULBHQY59WDNqQy~27Dbko4fVzbFyoiJt8JwDLvyWFRYr6JExtYCEnvrKI6E1jw7-7hBu8sEDR2uR8jMbRTaxJYdTuPXY54ymZ1qTGEJG80ZmwQmRaDxJj2p9bL861Bu5AfyTHhJJfJ8jWVFxtzjwUoXmiyrJoxP-s2jI0H6NhX~vvsJKZtx-EMWossY016Vv1ipT9UZYPairCd0muCm-XSTSdeQm0GGcWrSyIz~8C8TiUzxHL4zyUc9Pvrs~lGgFxgTqg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" width="800">
 
 *(a) Number of uses of each -omics category in the reviewed papers.*    
 *(b) Number of -omics used per paper in the reviewed papers.*    
@@ -38,7 +38,7 @@ https://academic.oup.com/bioinformatics/article/39/2/btad021/6986971
 - 일반 데이터 사이언스 연구 그룹들도 data integration을 수행한다.
 - 그렇다면
 	1) 일반적인 데이터 사이언스 연구자 그룹과 2) multiomics data를 연구하는 그룹 사이에서 **data integration을 목적으로 사용하는 machine learning 기술에 차이가 있을까?**
-<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/btad021f4.jpeg?Expires=1696441617&Signature=zk231bVQ1rG39cc1An3JJlaNOm0iJgRd-0cYURpp7dfFNwRN4UrGoXMeSMkHDC4qBK8urijWQDE1MO1Q32SVs3QXL38QPqRqQybMQCmx6-WpCaeKjqqUxgdq6VMHYPvaFUHgBFNqU2ji21T3OkGYn8k8JFY-Xy0hHWrhUM35TdcAcDyIwwj7z3RM0iFTQyj8tmTC3gbRzn2ZfnMI07r5Dx-WaUx7tcznIuMH-BgsgYqnS~jymyuqu0l3RLyXEVz4AEBN~Sdnnp5k3asOiVAaQGkBihn5s75S6UuFgGar6B2rdz1OqYnrCP~0OeGSeR8D0BIrSGQB6wOUVg~OyEXBUA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" width="800">    
+<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/btad021f4.jpeg?Expires=1704667631&Signature=TIXOLiE~Or5NQoKkitGcIFRZqtBU5L1sGtO6B2g~yYE0WV8c-0d4wAT5-ED5ohXFSUt5HdZoKErrg0XwlGOvdeIQl0fF9PybQpNdeX3MijPrpd~K9I~P9EO5ijn8s00yvaIkOqfk7Cub-eUhC2K~rnV3OEnVJOJced4OgTjJ7on6JEwNcz11dCb6ddv7h0tIL7GOqL~WOgW3TeRSOUTq2yDothNqOIBRe~9q5md9VJbA8Ksd8Z3BzR55cEReleyBmcykPlJaHewogw00blKY8~l24HJV6G~48Tb~2x8dVkLDhrgviDjSfrQjiD8T1LuWghjyWI2rmRw6758TmEsWOg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" width="800">    
 
 *(a) Number of ML techniques being used more than once in the reviewed papers.*
 *The publications on ‘machine learning AND multi-omics AND integration’ are plotted in green, while the publications on ‘machine learning AND integration’ are plotted in purple.*    
@@ -53,13 +53,13 @@ https://academic.oup.com/bioinformatics/article/39/2/btad021/6986971
 ## 2.3 What were the targets/labels of classification tasks?
 - Classification의 경우 환자의 생존 예측이 제일 많았다.
 # 3. Can we explain trends using an analysis of the citation of papers since 2015?    
-<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/m_btad021f5.jpeg?Expires=1699505413&Signature=FmzC9xrJQs8bT6-aAk~WmUFIAgXVpm-2TuXqVityXhP~Yb56jXNMjNOtxfohlUeuM~hE3jmmcgTHI6JFQgcN78JN0pXyyeo7~QMACQhvF3iaKUt64R4aXd2ABl~XuEiuy0bptKFo9W1R~90ZmpGfJlX3a2xChYFd6THOHTJOYsNWNyTC3z4aVcK1JGP4ayBpRDAJxINpz5T0PcUtYLWthUD1nxsZ-N3RUwCzcwudvHpPCwK6JQWAXbrkia5A73OfktBicyc9SrcDtAolqpXh1WJf-kkes5UhBonfQS5Q~dJuQ4DifpPF3o1HXrzpUT4EEzN9jDMPESJruIthZEnM1Q__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">    
+<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/btad021f5.jpeg?Expires=1704667660&Signature=I4WUCZjuHcZfYoHpf7ABXvpqDdPBpQiKAHTKHKHjOnnHiEpuiEsSwjVUlYS09B40wx0PkJw6p42fA10Y5ogS824RCp7Q6HRMJUQamYzc7TdCRCYr7dvqcXM50kOcOEUWAecTjk6U8Z7RQEuAIlxuKTbX5wyfxbHwNTwxxjwdfTCaz4277wRxQTNTFTCrXeoMdeDL~gGchEP0WeUxTggIEZwpc-38BzsJwGtIUFotXgYYSJ6HM6uI~Kc6QMGtt0U8yQVAANFJqdW2wnBsMylrqAbPBYctWirAaEXPSJjKMaCXaOw6CnPS-hdl9Iz-~gOWL8c6e0d5ZpK0ilwkLiVoCw__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">    
 
 *Number of citations per year, of papers published in different years*    
 
 - 2018년 [Deep Learning-Based Multi-Omics Integration Robustly Predicts Survival in Liver Cancer](https://pubmed.ncbi.nlm.nih.gov/28982688/) 논문이 발표된 이후, multiomics 연구에서 ML 기술을 이용한 논문이 급격하게 늘어났다.
 # 4. Discussion
-<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/btad021f6.jpeg?Expires=1696301496&Signature=4mKcdi8ADjARTc0jzXDH9FQ1VH8VF7URMK4ZzJXdzlAhK-~7oWZ-osXgX0tbdhS9QWEf3~UBhDlu7EN5P8XW56xhFot2-gESjIBqvcC14d8hgs8Fun~sn1S4GkK8Y-KbXevop20uPMG20kzE4Sf3UPtmyM4ZNRzhhKTNgH1wte2Lt8VP89NSfftjallHiwgyhUq79nrUpCrUsyVaKdWa0iIc0jnwPngSHA0rHUqNvTAM~NblAghzEMhOxA0Y6v4-s0vnZwrAIcS69yBDZjaVBQ--w1YXsORw72GDrK5PrHQ5VDOMfN6jtQI8KQnD3DtYzA-x-D42cod2V6d3bpbBEQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" width="800">    
+<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/2/10.1093_bioinformatics_btad021/1/btad021f6.jpeg?Expires=1704667678&Signature=fjOicxK8IfoM9pVcIbuypM~-rV8dp5NuGPFEXqOAYUKmG-avL1MfH~k4MqWRI7TwRHcW4sYU3mXt6hEWpo5LembZA6uEeEJZ7SBMVaBH06SO4FRg7~3b1O~eL5LcWTDRIS2C8c4H42fnHBZYb3HM0b-vQaXkShJ-ZN5vEkYS-kkbyToTuCvTEOy7874jieo1Edcvn6qSDF~PfzhfK73YnxxhUHThY03~a83K0qoa9roQcmOCs6qXbVTGAk00~yRDx1HY4AFSgaqKUTcIhuiaOuxqnjFKFenlSSAoTxqUUdGvUivZW2P7DKzUl9bmgFqAQ7p96~j8ziacE3OFTgERzg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" width="800">    
 
 *Shapes in datasets. Features (*$P$*) Samples (*$n$*)*    
 *(a) A dataset where* $n$ ≫ $P$*, the ideal ‘shape’ for many ML techniques.*    
