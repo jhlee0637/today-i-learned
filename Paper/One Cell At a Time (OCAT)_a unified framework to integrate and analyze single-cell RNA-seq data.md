@@ -6,7 +6,7 @@
 	- Mutual Nearest Neighbors{[[MNNs]]}를 이용한 시도의 경우 데이터가 커질수록 시간과 컴퓨터 자원을 많이 소비한다는 단점이 있다.
 		- 차원축소를 통해 메모리소비를 줄이려고는 하지만, single cell의 크기가 커지면 다시 문제가 발생할 뿐이다.
 	- [[Seurat]], [[Harmony]]와 같은 툴들은 각각 다른 방법으로 메모리소비율과 batch effect 제거라는 과제를 해결하려고 하지만, 여전히 데이터 크기가 절대적으로 커지면 소비가 늘어날 뿐이다.
-- 연구팀은 OCAT라는 높은 메모리효율은 가지는 machine learning 기반의 방법을 소개한다.
+- 연구팀은 **OCAT**라는 높은 메모리효율은 가지는 machine learning 기반의 방법을 소개한다.
 	- 이 방법은 여러 scRNA-seq 데이터셋을 합칠 때 batch effect를 제거할 필요가 없다.
 	- OCAT는 sparse encoding을 이용하여 서로 다른 scRNA-seq 데이터셋을 합친다.
 	- OCAT는 다음과 같은 장점을 가진다.

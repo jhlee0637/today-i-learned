@@ -5,7 +5,7 @@
 - Tree data structure를 배울 때는 일반적으로 Binary Search Trees(BST)를 상상하고 공부한다.
 	- BST의 경우 각 node는 최대 두 개의 분기를 가진다.
 - Tree data structure는 크게 4가지의 방식으로 traverse가 가능하다.
-	1. Depth First Search([[DFS]])
+	1. Depth First Search([[today-i-learned/Knowledge/Data Science/DFS]])
 		- Inorder Traversal
 		- Preorder Traversal
 		- Postorder Traversal

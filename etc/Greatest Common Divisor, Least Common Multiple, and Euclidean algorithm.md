@@ -1,7 +1,4 @@
-[[Python] 최소공배수, 최대공약수란? 파이썬 알고리즘으로 쉽게 구현하기](https://codingpractices.tistory.com/34)
-[Greatest common divisor](https://en.wikipedia.org/wiki/Greatest_common_divisor)
-[Least common multiple](https://en.wikipedia.org/wiki/Least_common_multiple)
-[Euclidean algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm)
+
 # Greatest Common Divisor(GCD), 최대공약수
 ## What is GCD
 - In mathematics, the greatest common divisor (GCD) of two or more integers, which are not all zero, is the largest positive integer that divides each of the integers. 
@@ -93,3 +90,9 @@ LCM=(A*B)//GCD
 
 print("LCM:", LCM)
 ```
+
+### 참고
+- [[Python] 최소공배수, 최대공약수란? 파이썬 알고리즘으로 쉽게 구현하기](https://codingpractices.tistory.com/34)
+- [Greatest common divisor](https://en.wikipedia.org/wiki/Greatest_common_divisor)
+- [Least common multiple](https://en.wikipedia.org/wiki/Least_common_multiple)
+- [Euclidean algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm)
