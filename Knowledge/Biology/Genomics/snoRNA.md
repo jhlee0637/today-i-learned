@@ -1,1 +1,0 @@
-small nucleaolar RNA

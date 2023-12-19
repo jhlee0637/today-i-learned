@@ -1,1 +1,0 @@
-small nuclear RNA

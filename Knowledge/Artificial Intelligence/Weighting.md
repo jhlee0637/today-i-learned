@@ -1,2 +1,0 @@
-# Case Weight
-# Sample Weight
